@@ -2,27 +2,32 @@
 
 html
   font-family -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+  font-size 16px
+  -webkit-overflow-scrolling touch
 
 $tile_dimension = 30px
 
 .game
   display flex
   flex-flow row wrap
-  margin-bottom 20px
+  margin-bottom .5rem
+  padding .5rem
 
 h1
-  font-size 1.5rem
   flex 0 1 100%
+  font-size 1.5rem
+  font-weight bold
   margin-bottom 1rem
 
 .character
-  margin-bottom .5rem
-  width 100px
+  margin-bottom 1rem
+  min-width 100px
+  text-align center
 
 i
   cursor pointer
   display inline-block
-  height $tile_dimension
+  height $tile_dimension + 10px
   position relative
   text-align center
   vertical-align top
@@ -31,7 +36,7 @@ i
   &:before
     display block
     font-size $tile_dimension - 4px
-    line-height $tile_dimension
+    line-height $tile_dimension + 10px
 
   &:hover:after
     $width = 80px
@@ -43,8 +48,9 @@ i
     left (($width / -2 - 5px) + ($tile_dimension / 2))
     padding 5px
     position absolute
-    top $tile_dimension
+    top $tile_dimension + 10px
     width $width
+    z-index 1
 
 tile(content, tooltip)
   &:before
@@ -93,3 +99,24 @@ tile(content, tooltip)
 
 .mage
   tile('\2728', 'mage')
+
+@media only screen and (min-width: 768px)
+  body
+    margin auto
+    max-width 800px
+    width 100%
+
+  .character
+    width (100% / 7)
+
+@media only screen and (max-width: 599px)
+  .character
+    width 20%
+
+@media only screen and (max-width: 499px)
+  .character
+    width 25%
+
+@media only screen and (max-width: 399px)
+  .character
+    width 33%
