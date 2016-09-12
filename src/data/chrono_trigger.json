@@ -1,0 +1,42 @@
+{
+  "title": "Chrono Trigger",
+  "year": 1995,
+  "platform": "snes",
+  "characters": {
+    "Ayla": {
+      "sex": "f",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Crono": {
+      "sex": "m",
+      "age": "y",
+      "role": "striker"
+    },
+    "Frog": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    },
+    "Lucca": {
+      "sex": "f",
+      "age": "y",
+      "role": "mage"
+    },
+    "Magus": {
+      "sex": "m",
+      "age": "a",
+      "role": "balanced"
+    },
+    "Marle": {
+      "sex": "f",
+      "age": "y",
+      "role": "mage"
+    },
+    "Robo": {
+      "sex": "u",
+      "age": "u",
+      "role": "bruiser"
+    }
+  }
+}

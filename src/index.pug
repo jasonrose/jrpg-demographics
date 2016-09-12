@@ -2,6 +2,7 @@ doctype html
 html(lang='en')
     head
         meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
         link(rel='stylesheet', href='app.css', media='all')
 
     body
@@ -10,7 +11,7 @@ html(lang='en')
                 h1=game.title
                 each character, characterName in game.characters
                     .character
-                        .character_name=characterName
-                        .character_splats
-                            i(class='sex_' + character.sex + ' age_' + character.age)
-                            i(class='role_' + character.role)
+                        div=characterName
+                        div
+                            i(class=character.age + character.sex)
+                            i(class=character.role)

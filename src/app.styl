@@ -6,18 +6,24 @@ html
 $tile_dimension = 30px
 
 .game
+  display flex
+  flex-flow row wrap
   margin-bottom 20px
 
 h1
   font-size 1.5rem
+  flex 0 1 100%
   margin-bottom 1rem
 
 .character
   margin-bottom .5rem
+  width 100px
 
 i
+  cursor pointer
   display inline-block
   height $tile_dimension
+  position relative
   text-align center
   vertical-align top
   width $tile_dimension
@@ -27,58 +33,63 @@ i
     font-size $tile_dimension - 4px
     line-height $tile_dimension
 
-.sex_f
+  &:hover:after
+    $width = 80px
+    background white
+    border 1px solid black
+    border-radius 3px
+    display block
+    height auto
+    left (($width / -2 - 5px) + ($tile_dimension / 2))
+    padding 5px
+    position absolute
+    top $tile_dimension
+    width $width
+
+tile(content, tooltip)
   &:before
-    content '\1F469\1F3FB'
+    content content
+  &:hover:after
+    content tooltip
 
-  &.age_c
-    &:before
-      content '\1F476\1F3FB'
+.af
+  tile('\1F469\1F3FB', 'woman')
 
-  &.age_y
-    &:before
-      content '\1F467\1F3FB'
+.cf
+  tile('\1F476\1F3FB', 'girl')
 
-  &.age_o
-    &:before
-      content '\1F475\1F3FB'
+.yf
+  tile('\1F467\1F3FB', 'young woman')
 
-.sex_m
-  &:before
-    content '\1F468'
+.of
+  tile('\1F475\1F3FB', 'old woman')
 
-  &.age_c
-    &:before
-      content '\1F476\1F3FC'
+.am
+  tile('\1F468', 'man')
 
-  &.age_y
-    &:before
-      content '\1F466\1F3FC'
+.cm
+  tile('\1F476\1F3FC', 'boy')
 
-  &.age_o
-    &:before
-      content '\1F474\1F3FB'
+.ym
+  tile('\1F466\1F3FC', 'young man')
 
-.sex_u
-  &:before
-    content '\2753'
+.om
+  tile('\1F474\1F3FB', 'old man')
 
-.role_striker
-  &:before
-    content '\2694'
+.um, .uf, .uu, .au, .cu, .yu, .ou
+  tile('\2753', 'unknown')
 
-.role_balanced
-  &:before
-    content '\2696'
+.striker
+  tile('\2694', 'striker')
 
-.role_bruiser
-  &:before
-    content '\1F4AA\1F3FD'
+.balanced
+  tile('\2696', 'balanced')
 
-.role_skirmisher
-  &:before
-    content '\1F52A'
+.bruiser
+  tile('\1F4AA\1F3FD', 'bruiser')
 
-.role_mage
-  &:before
-    content '\2728'
+.skirmisher
+  tile('\1F52A', 'skirmisher')
+
+.mage
+  tile('\2728', 'mage')
