@@ -1,0 +1,49 @@
+{
+  "name": "jrpg-demographics",
+  "version": "0.0.0",
+  "description": "JRPG Demographics Site",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm-run-all --sequential clean make-dirs --parallel stylus-prod pug-prod",
+    "clean": "rimraf ./build",
+    "deploy": "gh-pages -d ./build",
+    "live-server": "live-server ./build --port=3456 --wait=1000",
+    "make-dirs": "mkdirp build",
+    "make-files": "copy index.html ./build",
+    "predeploy": "npm run build",
+    "pug": "pug --obj data.js src/index.pug --out ./build",
+    "pug-dev": "npm run pug -- --pretty",
+    "pug-prod": "npm run pug -- --no-debug",
+    "start": "npm-run-all --sequential clean make-dirs make-files --parallel stylus-dev pug-dev watch-compile live-server",
+    "stylus": "stylus -u autoprefixer-stylus --with \"{ browsers: ['last 2 versions'] }\" --include-css --out ./build/app.css ./src/app.styl",
+    "stylus-dev": "npm run stylus -- --watch",
+    "stylus-prod": "npm run stylus -- --compress",
+    "watch-compile": "watchcompile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonrose/jrpg-demographics.git"
+  },
+  "author": "Jason Rose",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonrose/jrpg-demographics/issues"
+  },
+  "homepage": "https://github.com/jasonrose/jrpg-demographics",
+  "devDependencies": {
+    "autoprefixer-stylus": "0.9.4",
+    "copy": "0.3.0",
+    "gh-pages": "0.11.0",
+    "live-server": "1.1.0",
+    "mkdirp": "0.5.1",
+    "npm-run-all": "3.0.0",
+    "pug-cli": "1.0.0-alpha6",
+    "require-directory": "2.1.1",
+    "rimraf": "2.5.4",
+    "stylus": "0.54.5",
+    "watch-compile": "0.2.3"
+  },
+  "dependencies": {
+    "reset-css": "^2.0.20160720"
+  }
+}

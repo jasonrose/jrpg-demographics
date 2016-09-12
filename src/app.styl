@@ -1,0 +1,84 @@
+@import 'node_modules/reset-css/reset.css'
+
+html
+  font-family -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+
+$tile_dimension = 30px
+
+.game
+  margin-bottom 20px
+
+h1
+  font-size 1.5rem
+  margin-bottom 1rem
+
+.character
+  margin-bottom .5rem
+
+i
+  display inline-block
+  height $tile_dimension
+  text-align center
+  vertical-align top
+  width $tile_dimension
+
+  &:before
+    display block
+    font-size $tile_dimension - 4px
+    line-height $tile_dimension
+
+.sex_f
+  &:before
+    content '\1F469\1F3FB'
+
+  &.age_c
+    &:before
+      content '\1F476\1F3FB'
+
+  &.age_y
+    &:before
+      content '\1F467\1F3FB'
+
+  &.age_o
+    &:before
+      content '\1F475\1F3FB'
+
+.sex_m
+  &:before
+    content '\1F468'
+
+  &.age_c
+    &:before
+      content '\1F476\1F3FC'
+
+  &.age_y
+    &:before
+      content '\1F466\1F3FC'
+
+  &.age_o
+    &:before
+      content '\1F474\1F3FB'
+
+.sex_u
+  &:before
+    content '\2753'
+
+.role_striker
+  &:before
+    content '\2694'
+
+.role_balanced
+  &:before
+    content '\2696'
+
+.role_bruiser
+  &:before
+    content '\1F4AA\1F3FD'
+
+.role_skirmisher
+  &:before
+    content '\1F52A'
+
+.role_mage
+  &:before
+    content '\2728'

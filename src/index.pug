@@ -1,0 +1,16 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        link(rel='stylesheet', href='app.css', media='all')
+
+    body
+        each game in data
+            .game
+                h1=game.title
+                each character, characterName in game.characters
+                    .character
+                        .character_name=characterName
+                        .character_splats
+                            i(class='sex_' + character.sex + ' age_' + character.age)
+                            i(class='role_' + character.role)

@@ -1,0 +1,67 @@
+{
+  "title": "Final Fantasy IV",
+  "year": 1991,
+  "platform": "snes",
+  "characters": {
+    "Cecil": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    },
+    "Cid": {
+      "sex": "m",
+      "age": "o",
+      "role": "bruiser"
+    },
+    "Edge": {
+      "sex": "m",
+      "age": "a",
+      "role": "skirmisher"
+    },
+    "Edward": {
+      "sex": "m",
+      "age": "a",
+      "role": "skirmisher"
+    },
+    "FuSoYa": {
+      "sex": "m",
+      "age": "o",
+      "role": "mage"
+    },
+    "Kain": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    },
+    "Palom": {
+      "sex": "m",
+      "age": "c",
+      "role": "mage"
+    },
+    "Porom": {
+      "sex": "f",
+      "age": "c",
+      "role": "mage"
+    },
+    "Rosa": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    },
+    "Rydia": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    },
+    "Tellah": {
+      "sex": "m",
+      "age": "o",
+      "role": "mage"
+    },
+    "Yang": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    }
+  }
+}

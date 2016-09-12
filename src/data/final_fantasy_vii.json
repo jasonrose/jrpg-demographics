@@ -1,0 +1,52 @@
+{
+  "title": "Final Fantasy VII",
+  "year": 1997,
+  "platform": "psx",
+  "characters": {
+    "Aeris": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    },
+    "Barret": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Cait Sith": {
+      "sex": "u",
+      "age": "u",
+      "role": "mage"
+    },
+    "Cid": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Cloud": {
+      "sex": "m",
+      "age": "a",
+      "role": "balanced"
+    },
+    "Red XIII": {
+      "sex": "m",
+      "age": "u",
+      "role": "balanced"
+    },
+    "Tifa": {
+      "sex": "f",
+      "age": "a",
+      "role": "skirmisher"
+    },
+    "Vincent": {
+      "sex": "m",
+      "age": "a",
+      "role": "mage"
+    },
+    "Yuffie": {
+      "sex": "f",
+      "age": "y",
+      "role": "skirmisher"
+    }
+  }
+}
