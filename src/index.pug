@@ -8,7 +8,9 @@ html(lang='en')
     body
         each game in data
             .game
-                h1=game.title
+                h1
+                    span=game.title
+                    span.subtitle=' (' + game.year + ' — ' + game.platform.toUpperCase() + ')'
                 each character, characterName in game.characters
                     .character
                         div=characterName

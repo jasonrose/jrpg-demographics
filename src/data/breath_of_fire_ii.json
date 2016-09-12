@@ -1,0 +1,52 @@
+{
+  "title": "Breath of Fire II",
+  "year": 1995,
+  "platform": "snes",
+  "characters": {
+    "Bleu": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    },
+    "Bow": {
+      "sex": "m",
+      "age": "y",
+      "role": "balanced"
+    },
+    "Jean": {
+      "sex": "m",
+      "age": "y",
+      "role": "balanced"
+    },
+    "Katt": {
+      "sex": "f",
+      "age": "y",
+      "role": "skirmisher"
+    },
+    "Nina": {
+      "sex": "f",
+      "age": "y",
+      "role": "mage"
+    },
+    "Rand": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Ryu": {
+      "sex": "m",
+      "age": "y",
+      "role": "striker"
+    },
+    "Spar": {
+      "sex": "u",
+      "age": "u",
+      "role": "mage"
+    },
+    "Sten": {
+      "sex": "m",
+      "age": "a",
+      "role": "skirmisher"
+    }
+  }
+}

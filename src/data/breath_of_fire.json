@@ -1,0 +1,47 @@
+{
+  "title": "Breath of Fire",
+  "year": 1994,
+  "platform": "snes",
+  "characters": {
+    "Bleu": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    },
+    "Bo": {
+      "sex": "m",
+      "age": "a",
+      "role": "skirmisher"
+    },
+    "Gobi": {
+      "sex": "m",
+      "age": "a",
+      "role": "balanced"
+    },
+    "Karn": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    },
+    "Mogu": {
+      "sex": "m",
+      "age": "a",
+      "role": "skirmisher"
+    },
+    "Nina": {
+      "sex": "f",
+      "age": "y",
+      "role": "mage"
+    },
+    "Ox": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Ryu": {
+      "sex": "m",
+      "age": "y",
+      "role": "striker"
+    }
+  }
+}
