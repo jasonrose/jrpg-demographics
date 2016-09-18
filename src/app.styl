@@ -1,11 +1,9 @@
-@import 'node_modules/reset-css/reset.css'
-
 html
   font-family -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
   font-size 16px
   -webkit-overflow-scrolling touch
 
-$tile_dimension = 30px
+$tile_dimension = 32px
 
 .game
   display flex
@@ -31,7 +29,8 @@ h1
 i
   cursor pointer
   display inline-block
-  height $tile_dimension + 10px
+  height $tile_dimension
+  margin 5px
   position relative
   text-align center
   vertical-align top
@@ -56,53 +55,54 @@ i
     width $width
     z-index 1
 
-tile(content, tooltip)
-  &:before
-    content content
+tile(url, tooltip)
+  background url(url) no-repeat center center
+  background-size contain
+  
   &:hover:after
     content tooltip
 
 .af
-  tile('\1F469\1F3FB', 'woman')
+  tile('https://cdn.jsdelivr.net/emojione/assets/png/1f469-1f3fb.png?v=2.2.4', 'woman')
 
 .cf
-  tile('\1F476\1F3FB', 'girl')
+  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f476-1f3fb.png?v=2.2.4', 'girl')
 
 .yf
-  tile('\1F467\1F3FB', 'young woman')
+  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f467-1f3fd.png?v=2.2.4', 'young woman')
 
 .of
-  tile('\1F475\1F3FB', 'old woman')
+  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f475-1f3fb.png?v=2.2.4', 'old woman')
 
 .am
-  tile('\1F468', 'man')
+  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f468-1f3fc.png?v=2.2.4', 'man')
 
 .cm
-  tile('\1F476\1F3FC', 'boy')
+  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f476.png?v=2.2.4', 'boy')
 
 .ym
-  tile('\1F466\1F3FC', 'young man')
+  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f466-1f3fc.png?v=2.2.4', 'young man')
 
 .om
-  tile('\1F474\1F3FB', 'old man')
+  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f474-1f3ff.png?v=2.2.4', 'old man')
 
 .um, .uf, .uu, .au, .cu, .yu, .ou
-  tile('\2753', 'unknown')
+  tile('http://cdn.jsdelivr.net/emojione/assets/png/2753.png?v=2.2.4', 'unknown')
 
 .striker
-  tile('\2694', 'striker')
+  tile('http://cdn.jsdelivr.net/emojione/assets/png/2694.png?v=2.2.4', 'striker')
 
 .balanced
-  tile('\2696', 'balanced')
+  tile('http://cdn.jsdelivr.net/emojione/assets/png/2696.png?v=2.2.4', 'balanced')
 
 .bruiser
-  tile('\1F4AA\1F3FD', 'bruiser')
+  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f4aa-1f3fe.png?v=2.2.4', 'bruiser')
 
 .skirmisher
-  tile('\1F52A', 'skirmisher')
+  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f5e1.png?v=2.2.4', 'skirmisher')
 
 .mage
-  tile('\2728', 'mage')
+  tile('http://cdn.jsdelivr.net/emojione/assets/png/2728.png?v=2.2.4', 'mage')
 
 @media only screen and (min-width: 768px)
   body
