@@ -1,0 +1,42 @@
+{
+  "title": "Breath of Fire IV",
+  "year": 2000,
+  "platform": "psx",
+  "characters": {
+    "Cray": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Ershin": {
+      "sex": "u",
+      "age": "u",
+      "role": "balanced"
+    },
+    "Fou-Lu": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    },
+    "Nina": {
+      "sex": "f",
+      "age": "y",
+      "role": "mage"
+    },
+    "Ryu": {
+      "sex": "m",
+      "age": "y",
+      "role": "striker"
+    },
+    "Scias": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    },
+    "Ursula": {
+      "sex": "f",
+      "age": "a",
+      "role": "balanced"
+    }
+  }
+}

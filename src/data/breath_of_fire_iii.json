@@ -1,0 +1,42 @@
+{
+  "title": "Breath of Fire III",
+  "year": 1998,
+  "platform": "psx",
+  "characters": {
+    "Garr": {
+      "sex": "m",
+      "age": "u",
+      "role": "bruiser"
+    },
+    "Momo": {
+      "sex": "f",
+      "age": "a",
+      "role": "balanced"
+    },
+    "Nina": {
+      "sex": "f",
+      "age": "y",
+      "role": "mage"
+    },
+    "Peco": {
+      "sex": "u",
+      "age": "u",
+      "role": "striker"
+    },
+    "Rei": {
+      "sex": "m",
+      "age": "a",
+      "role": "skirmisher"
+    },
+    "Ryu": {
+      "sex": "m",
+      "age": "y",
+      "role": "balanced"
+    },
+    "Teepo": {
+      "sex": "m",
+      "age": "y",
+      "role": "balanced"
+    }
+  }
+}
