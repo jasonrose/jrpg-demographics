@@ -22,7 +22,7 @@ body
   display flex
   flex-flow row wrap
   max-width 960px
-  padding .5rem 1rem
+  padding 1rem
   width 100%
 
 h1
@@ -48,7 +48,7 @@ h1
 .character
   margin-bottom 1rem
   text-align center
-  min-width 90px
+  min-width 95px
 
 .metrics
   background pink
@@ -145,29 +145,33 @@ tile(url, tooltip)
 .female
   tile('http://cdn.jsdelivr.net/emojione/assets/png/1f483.png?v=2.2.4', '% female')
 
-@media only screen and (max-width 640px)
+@media only screen and (max-width 715px)
   .game
     justify-content center
 
   .metrics
-    margin-bottom 1rem
+    margin-bottom 1.5rem
     order 1
 
   .characters
     order 2
 
-@media only screen and (max-width 499px)
-  .character
-    width 25%
-
-@media only screen and (max-width 399px)
+@media only screen
   .character
     width 33%
 
-@media only screen and (min-width 499px)
+@media only screen and (min-width 450px)
+  .character
+    width 25%
+
+@media only screen and (min-width 560px) and (max-width 715px)
   .character
     width 20%
 
-@media only screen and (min-width 640px)
+@media only screen and (min-width 716px)
   .metrics
     width 320px - 16px * 2
+
+@media only screen and (min-width 810px)
+  .character
+    width 20%
