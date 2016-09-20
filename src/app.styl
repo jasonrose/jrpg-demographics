@@ -51,8 +51,6 @@ h1
   min-width 95px
 
 .metrics
-  background pink
-  height 200px
   width 100%
 
 i
@@ -144,6 +142,38 @@ tile(url, tooltip)
 
 .female
   tile('http://cdn.jsdelivr.net/emojione/assets/png/1f483.png?v=2.2.4', '% female')
+
+.sexes
+  align-items stretch
+  display flex
+
+  .mtext,
+  .ftext
+    line-height $tile_dimension + 10px
+    text-align center
+    width 40px
+
+  .mtext,
+  .mratio
+    background mediumpurple
+
+  .ftext,
+  .fratio,
+  .ratio
+    background orangered
+
+  .uratio
+    background gold
+
+  .mratio,
+  .fratio,
+  .uratio
+    float left
+    height 100%
+
+  .ratio
+    flex 1
+
 
 @media only screen and (max-width 715px)
   .game
