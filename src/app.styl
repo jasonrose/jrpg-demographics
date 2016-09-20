@@ -26,7 +26,6 @@ body
   width 100%
 
 h1
-  flex 0 1 100%
   font-size 1.5rem
   font-weight bold
   margin-bottom 2rem
@@ -147,20 +146,19 @@ tile(url, tooltip)
   align-items stretch
   display flex
 
-  .mtext,
-  .ftext
-    line-height $tile_dimension + 10px
-    text-align center
-    width 40px
-
-  .mtext,
   .mratio
     background mediumpurple
+    text-align left
+    padding-left .5rem
 
-  .ftext,
   .fratio,
   .ratio
     background orangered
+    color white
+
+  .fratio
+    padding-right .5rem
+    text-align right
 
   .uratio
     background gold
@@ -169,7 +167,8 @@ tile(url, tooltip)
   .fratio,
   .uratio
     float left
-    height 100%
+    line-height $tile_dimension + 10px
+    height $tile_dimension + 10px
 
   .ratio
     flex 1
@@ -177,6 +176,7 @@ tile(url, tooltip)
 
 @media only screen and (max-width 715px)
   .game
+    flex-flow column nowrap
     justify-content center
 
   .metrics
@@ -199,6 +199,9 @@ tile(url, tooltip)
     width 20%
 
 @media only screen and (min-width 716px)
+  h1
+    flex 0 1 100vw
+
   .metrics
     width 320px - 16px * 2
 

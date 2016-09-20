@@ -21,10 +21,8 @@ html(lang='en')
                 .metrics
                     .sexes
                         i.male
-                        .mtext=game.metrics.sexes.malePercent
                         .ratio
-                            .mratio(style='width:' + game.metrics.sexes.malePercent)
+                            .mratio(style='width:' + game.metrics.sexes.malePercent)=game.metrics.sexes.malePercent
                             .uratio(style='width:' + game.metrics.sexes.unknownPercent)
-                            .fratio(style='width: ' + game.metrics.sexes.femalePercent)
-                        .ftext=game.metrics.sexes.femalePercent
+                            .fratio(style='width: ' + game.metrics.sexes.femalePercent)=game.metrics.sexes.femalePercent
                         i.female
