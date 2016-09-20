@@ -18,7 +18,7 @@
     "stylus": "stylus -u autoprefixer-stylus --with \"{ browsers: ['last 2 versions'] }\" --include-css --out ./build/app.css ./src/app.styl",
     "stylus-dev": "npm run stylus -- --watch",
     "stylus-prod": "npm run stylus -- --compress",
-    "watch-compile": "watchcompile"
+    "watch-compile": "node sentry.js"
   },
   "repository": {
     "type": "git",
@@ -31,15 +31,16 @@
   },
   "homepage": "https://github.com/jasonrose/jrpg-demographics",
   "devDependencies": {
-    "autoprefixer-stylus": "0.9.4",
+    "autoprefixer-stylus": "0.10.0",
     "copy": "0.3.0",
     "gh-pages": "0.11.0",
     "live-server": "1.1.0",
     "mkdirp": "0.5.1",
-    "npm-run-all": "3.0.0",
+    "npm-run-all": "3.1.0",
     "pug-cli": "1.0.0-alpha6",
     "require-directory": "2.1.1",
     "rimraf": "2.5.4",
+    "sentry": "0.1.2",
     "stylus": "0.54.5",
     "watch-compile": "0.2.3"
   },

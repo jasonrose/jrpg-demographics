@@ -11,9 +11,11 @@ html(lang='en')
                 h1
                     span=game.title
                     span.subtitle=' (' + game.year + ' — ' + game.platform.toUpperCase() + ')'
-                each character, characterName in game.characters
-                    .character
-                        div=characterName
-                        div
-                            i(class=character.age + character.sex)
-                            i(class=character.role)
+                .characters
+                    each character, characterName in game.characters
+                        .character
+                            div=characterName
+                            div
+                                i(class=character.age + character.sex)
+                                i(class=character.role)
+                .metrics
