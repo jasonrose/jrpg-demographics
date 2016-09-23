@@ -1,0 +1,42 @@
+{
+  "title": "Lufia II: Rise of the Sinistrals",
+  "year": 1996,
+  "platform": "snes",
+  "characters": {
+    "Artea": {
+      "sex": "m",
+      "age": "a",
+      "role": "balanced"
+    },
+    "Dekar": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Guy": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Lexis": {
+      "sex": "m",
+      "age": "a",
+      "role": "skirmisher"
+    },
+    "Maxim": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    },
+    "Selan": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    },
+    "Tia": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    }
+  }
+}

@@ -16,7 +16,7 @@ html(lang='en')
             .game
                 h1
                     span=game.title
-                    span.subtitle=' (' + game.year + ' — ' + game.platform.toUpperCase() + ')'
+                    span.subtitle=' (' + game.year + ', ' + game.platform.toUpperCase() + ')'
                 .characters
                     each character, characterName in game.characters
                         .character

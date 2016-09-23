@@ -1,0 +1,22 @@
+{
+  "title": "Breath of Fire: Dragon Quarter",
+  "year": 2003,
+  "platform": "ps2",
+  "characters": {
+    "Lin": {
+      "sex": "f",
+      "age": "a",
+      "role": "striker"
+    },
+    "Nina": {
+      "sex": "f",
+      "age": "c",
+      "role": "mage"
+    },
+    "Ryu": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    }
+  }
+}

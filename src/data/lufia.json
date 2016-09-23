@@ -1,0 +1,27 @@
+{
+  "title": "Lufia & the Fortress of Doom",
+  "year": 1993,
+  "platform": "snes",
+  "characters": {
+    "Aguro": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "The Hero": {
+      "sex": "m",
+      "age": "y",
+      "role": "striker"
+    },
+    "Jerin": {
+      "sex": "f",
+      "age": "y",
+      "role": "balanced"
+    },
+    "Lufia": {
+      "sex": "f",
+      "age": "y",
+      "role": "mage"
+    }
+  }
+}
