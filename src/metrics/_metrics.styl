@@ -1,0 +1,52 @@
+.sexes
+  align-items stretch
+  display flex
+
+  .mratio
+    background mediumpurple
+    text-align left
+    padding-left .5rem
+
+  .fratio,
+  .ratio
+    background orangered
+    color white
+
+  .fratio
+    padding-right .5rem
+    text-align right
+
+  .uratio
+    background gold
+
+  .mratio,
+  .fratio,
+  .uratio
+    float left
+    line-height $tile_dimension + 10px
+    height $tile_dimension + 10px
+
+  .ratio
+    flex 1
+
+.roles
+  align-items flex-end
+  display flex
+  flex-flow row
+  height 100px
+
+  .entry
+    align-items center
+    justify-content flex-end
+    display flex
+    flex 1
+    flex-flow column
+    height 100%
+    padding 0 5px
+    text-align center
+
+    .bar
+      background gold
+      margin-top .25rem
+      min-height .25rem
+      width 100%

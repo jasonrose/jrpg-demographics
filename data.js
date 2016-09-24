@@ -25,9 +25,19 @@ function sexesMetricVisitor (metrics) {
   metrics.sexes = sexes;
   var demographics = metrics.demographics;
 
-  sexes.malePercent = (Math.floor(demographics.male / demographics.total * 100)) + '%';
-  sexes.femalePercent = (Math.floor(demographics.female / demographics.total * 100)) + '%';
-  sexes.unknownPercent = (Math.floor(demographics.unknownSex / demographics.total * 100)) + '%';
+  sexes.malePercent = Math.floor(demographics.male / demographics.total * 100) + '%';
+  sexes.femalePercent = Math.floor(demographics.female / demographics.total * 100) + '%';
+  sexes.unknownPercent = Math.floor(demographics.unknownSex / demographics.total * 100) + '%';
+}
+
+function rolesMetricVisitor (metrics) {
+  var demographics = metrics.demographics;
+  var roles = metrics.roles || {};
+  roles.keys = 'balanced bruiser mage skirmisher striker'.split(' ');
+  roles.keys.forEach(function (role) {
+    roles[role] = Math.floor(demographics[role] / demographics.total * 100) + '%';
+  });
+  metrics.roles = roles;
 }
 
 function demographicMetrics (metrics, character) {
@@ -72,11 +82,11 @@ function demographicMetrics (metrics, character) {
     demographics.unknownSex++;
   }
 
-  metrics[character.role]++;
+  demographics[character.role]++;
 }
 
 
-var platformVisitors = [sexesMetricVisitor];
+var platformVisitors = [sexesMetricVisitor, rolesMetricVisitor];
 var gameVisitors = [sexesMetricVisitor];
 
 Object.keys(data).forEach(function (gameName) {

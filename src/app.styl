@@ -1,5 +1,9 @@
 @import 'node_modules/reset-css/reset.css'
 
+$tile_dimension = 32px
+
+@import './metrics/_metrics'
+
 html
   font-family -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
   font-size 16px
@@ -8,8 +12,6 @@ html
 
 *, *:before, *:after
   box-sizing inherit
-
-$tile_dimension = 32px
 
 body
   margin auto
@@ -27,8 +29,10 @@ body
   > .metrics
     border-bottom 2px solid #999
     margin 0
-    padding-bottom 1rem
     width 100%
+
+    .metric
+      margin-bottom 1rem
 
 .game
   border 0 solid #999
@@ -158,37 +162,6 @@ tile(url, tooltip)
 
 .female
   tile('http://cdn.jsdelivr.net/emojione/assets/png/1f483.png?v=2.2.4', '% female')
-
-.sexes
-  align-items stretch
-  display flex
-
-  .mratio
-    background mediumpurple
-    text-align left
-    padding-left .5rem
-
-  .fratio,
-  .ratio
-    background orangered
-    color white
-
-  .fratio
-    padding-right .5rem
-    text-align right
-
-  .uratio
-    background gold
-
-  .mratio,
-  .fratio,
-  .uratio
-    float left
-    line-height $tile_dimension + 10px
-    height $tile_dimension + 10px
-
-  .ratio
-    flex 1
 
 footer
   font-size .6rem

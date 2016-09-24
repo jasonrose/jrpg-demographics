@@ -1,4 +1,5 @@
 include metrics/sexes
+include metrics/roles
 
 doctype html
 html(lang='en')
@@ -21,6 +22,7 @@ html(lang='en')
                     span.subtitle=' (' + platform.startYear + '–' + platform.endYear + ')'
                 .metrics
                     +sexes(platform.metrics.sexes)
+                    +roles(platform.metrics.roles)
                 each game in platform.games
                     .game
                         h1
