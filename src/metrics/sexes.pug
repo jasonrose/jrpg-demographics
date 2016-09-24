@@ -1,0 +1,9 @@
+mixin sexes(metric)
+  .metric.sexes
+    i.male
+    .ratio
+      .mratio(style='width:' + metric.malePercent)=metric.malePercent
+      .uratio(style='width:' + metric.unknownPercent)
+      .fratio(style='width: ' + metric.femalePercent)=metric.femalePercent
+    i.female
+    

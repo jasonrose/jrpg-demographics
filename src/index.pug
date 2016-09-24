@@ -1,3 +1,5 @@
+include metrics/sexes
+
 doctype html
 html(lang='en')
     head
@@ -12,26 +14,28 @@ html(lang='en')
         link(rel='stylesheet', href='app.css', media='all')
 
     body
-        each game in data
-            .game
+        each platform in data
+            .platform
                 h1
-                    span=game.title
-                    span.subtitle=' (' + game.year + ', ' + game.platform.toUpperCase() + ')'
-                .characters
-                    each character, characterName in game.characters
-                        .character
-                            div=characterName
-                            div
-                                i(class=character.age + character.sex)
-                                i(class=character.role)
+                    span=platform.title.toUpperCase()
+                    span.subtitle=' (' + platform.startYear + '–' + platform.endYear + ')'
                 .metrics
-                    .sexes
-                        i.male
-                        .ratio
-                            .mratio(style='width:' + game.metrics.sexes.malePercent)=game.metrics.sexes.malePercent
-                            .uratio(style='width:' + game.metrics.sexes.unknownPercent)
-                            .fratio(style='width: ' + game.metrics.sexes.femalePercent)=game.metrics.sexes.femalePercent
-                        i.female
+                    +sexes(platform.metrics.sexes)
+                each game in platform.games
+                    .game
+                        h1
+                            span=game.title
+                            span.subtitle=' (' + game.year + ', ' + game.platform.toUpperCase() + ')'
+                        .characters
+                            each character, characterName in game.characters
+                                .character
+                                    div=characterName
+                                    div
+                                        i(class=character.age + character.sex)
+                                        i(class=character.role)
+                        .metrics
+                            +sexes(game.metrics.sexes)
+                            
         footer
             | © 2016 Jason Rose. Emoji provided free by
             =" "

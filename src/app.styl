@@ -16,17 +16,35 @@ body
   max-width 960px
   width 100%
 
+.platform
+  border-bottom 8px solid black
+  margin-bottom 1rem
+  padding 1rem .5rem
+
+  > h1
+    font-size 1.75rem
+
+  > .metrics
+    border-bottom 2px solid #999
+    margin 0
+    padding-bottom 1rem
+    width 100%
+
 .game
-  border 0 solid black
+  border 0 solid #999
   border-bottom-width 4px
   display flex
   flex-flow row wrap
   max-width 960px
-  padding 1rem
+  padding 1rem .5rem
   width 100%
 
+  &:last-of-type {
+    border-bottom 0
+  }
+
 h1
-  font-size 1.5rem
+  font-size 1.25rem
   font-weight bold
   margin-bottom 2rem
 
@@ -35,7 +53,7 @@ h1
 
   .subtitle
     color #777
-    font-size 1.1rem
+    font-size 1rem
     margin-top .25rem
 
 .characters
@@ -205,7 +223,8 @@ footer
   h1
     flex 0 1 100vw
 
-  .metrics
+  .metrics,
+  .platform > .metrics .metric
     width 320px - 16px * 2
 
   .characters
