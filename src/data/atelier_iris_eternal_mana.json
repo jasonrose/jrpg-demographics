@@ -1,0 +1,37 @@
+{
+  "title": "Atelier Iris: Eternal Mana",
+  "year": 2005,
+  "platform": "ps2",
+  "characters": {
+    "Arlin": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    },
+    "Delsus": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    },
+    "Klein": {
+      "sex": "m",
+      "age": "a",
+      "role": "mage"
+    },
+    "Lita": {
+      "sex": "f",
+      "age": "a",
+      "role": "skirmisher"
+    },
+    "Marietta": {
+      "sex": "f",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Norn": {
+      "sex": "f",
+      "age": "y",
+      "role": "mage"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "title": "Digital Devil Saga: Avatar Tuner 2",
+  "year": 2005,
+  "platform": "ps2",
+  "characters": {
+    "Argilla": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    },
+    "Cielo": {
+      "sex": "m",
+      "age": "a",
+      "role": "skirmisher"
+    },
+    "Gale": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    },
+    "Heat": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Roland": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    },
+    "Sera": {
+      "sex": "f",
+      "age": "a",
+      "role": "balanced"
+    },
+    "Seraph": {
+      "sex": "u",
+      "age": "a",
+      "role": "balanced"
+    },
+    "Serph": {
+      "sex": "m",
+      "age": "a",
+      "role": "balanced"
+    }
+  }
+}

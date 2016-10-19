@@ -2,8 +2,8 @@ var requireDirectory = require('require-directory');
 var data = requireDirectory(module, './src/data');
 exports.data = data;
 ///////////////////////////////////////////////////////////////////////////////
-var games = {};
-exports.data = games;
+var platforms = {};
+exports.data = platforms;
 
 function updatePlatform (platform, game) {
   platform.games.push(game);
@@ -91,15 +91,15 @@ var gameVisitors = [sexesMetricVisitor];
 
 Object.keys(data).forEach(function (gameName) {
   var game = data[gameName];
-  
-  var platform = games[game.platform] || {
+
+  var platform = platforms[game.platform] || {
     endYear: Number.MIN_VALUE,
     games: [],
     metrics: {},
     startYear: Number.MAX_VALUE,
     title: game.platform
   };
-  games[game.platform] = platform;
+  platforms[game.platform] = platform;
 
   updatePlatform(platform, game);
 
@@ -122,3 +122,17 @@ Object.keys(data).forEach(function (gameName) {
   });
 
 });
+
+var platformTuples = [];
+Object.keys(platforms).forEach(function (platformName) {
+  var platform = platforms[platformName];
+  platformTuples[platform.startYear] = platform;
+});
+
+
+var sortedPlatforms = {};
+platformTuples.filter(function (it) { return it; }).forEach(function (platform) {
+  sortedPlatforms[platform.title] = platform;
+});
+
+exports.data = sortedPlatforms;
