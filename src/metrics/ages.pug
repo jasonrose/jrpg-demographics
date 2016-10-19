@@ -1,0 +1,7 @@
+mixin ages(metric)
+  .metric.ages
+    each category in metric
+      .entry
+        each sex in category.keys
+          i(class=sex)
+        span.age_value= category.percent
