@@ -7,6 +7,7 @@ $color_gold = rgba(255, 229, 77, 1)
 $color_magenta = rgba(255, 115, 192, 1)
 $color_purple = rgba(194, 143, 239, 1)
 $color_red = rgba(255, 72, 72, 1)
+$color_blue = rgba(66, 139, 193, 1)
 
 @import './metrics/_metrics'
 
@@ -20,17 +21,19 @@ html
   box-sizing inherit
 
 body
+  background $color_blue
   margin auto
   max-width 960px
   width 100%
 
 .platform
-  border-bottom 8px solid black
+  background white
   margin-bottom 1rem
   padding 1rem .5rem
 
   > h1
     font-size 1.75rem
+    font-weight bold
 
   > .metrics
     border-bottom 2px solid #999
@@ -55,7 +58,7 @@ body
 
 h1
   font-size 1.25rem
-  font-weight bold
+  font-weight 900
   margin-bottom 2rem
 
   span
@@ -64,6 +67,7 @@ h1
   .subtitle
     color #777
     font-size 1rem
+    font-weight 500
     margin-top .25rem
 
 .characters
