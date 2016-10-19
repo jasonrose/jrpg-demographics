@@ -21,22 +21,21 @@ html
   box-sizing inherit
 
 body
-  background $color_blue
+  background linear-gradient(to bottom, $color_blue, lighten($color_blue, 50%))
   margin auto
   max-width 960px
   width 100%
 
 .platform
   background white
-  margin-bottom 1rem
-  padding 1rem .5rem
+  margin-bottom 2rem
 
   > h1
     font-size 1.75rem
     font-weight bold
 
   > .metrics
-    border-bottom 2px solid #999
+    border-bottom .5rem solid #999
     margin 0
     width 100%
 
@@ -45,9 +44,10 @@ body
 
 .game
   border 0 solid #999
-  border-bottom-width 4px
+  border-bottom-width .25rem
   display flex
   flex-flow row wrap
+  margin-bottom 1rem
   max-width 960px
   padding 1rem .5rem
   width 100%
@@ -130,53 +130,53 @@ tile(url, tooltip)
   tile('https://cdn.jsdelivr.net/emojione/assets/png/1f469-1f3fb.png?v=2.2.4', 'woman')
 
 .cf
-  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f476-1f3fb.png?v=2.2.4', 'girl')
+  tile('https://cdn.jsdelivr.net/emojione/assets/png/1f476-1f3fb.png?v=2.2.4', 'girl')
 
 .yf
-  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f467-1f3fe.png?v=2.2.4', 'young woman')
+  tile('https://cdn.jsdelivr.net/emojione/assets/png/1f467-1f3fe.png?v=2.2.4', 'young woman')
 
 .of
-  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f475-1f3fb.png?v=2.2.4', 'old woman')
+  tile('https://cdn.jsdelivr.net/emojione/assets/png/1f475-1f3fb.png?v=2.2.4', 'old woman')
 
 .am
-  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f468-1f3fc.png?v=2.2.4', 'man')
+  tile('https://cdn.jsdelivr.net/emojione/assets/png/1f468-1f3fc.png?v=2.2.4', 'man')
 
 .cm
-  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f476.png?v=2.2.4', 'boy')
+  tile('https://cdn.jsdelivr.net/emojione/assets/png/1f476.png?v=2.2.4', 'boy')
 
 .ym
-  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f466-1f3fd.png?v=2.2.4', 'young man')
+  tile('https://cdn.jsdelivr.net/emojione/assets/png/1f466-1f3fd.png?v=2.2.4', 'young man')
 
 .om
-  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f474-1f3ff.png?v=2.2.4', 'old man')
+  tile('https://cdn.jsdelivr.net/emojione/assets/png/1f474-1f3ff.png?v=2.2.4', 'old man')
 
 .um, .uf, .uu, .au, .cu, .yu, .ou
-  tile('http://cdn.jsdelivr.net/emojione/assets/png/2753.png?v=2.2.4', 'unknown')
+  tile('https://cdn.jsdelivr.net/emojione/assets/png/2753.png?v=2.2.4', 'unknown')
 
 .striker
-  tile('http://cdn.jsdelivr.net/emojione/assets/png/2694.png?v=2.2.4', 'striker')
+  tile('https://cdn.jsdelivr.net/emojione/assets/png/2694.png?v=2.2.4', 'striker')
 
 .balanced
-  tile('http://cdn.jsdelivr.net/emojione/assets/png/2696.png?v=2.2.4', 'balanced')
+  tile('https://cdn.jsdelivr.net/emojione/assets/png/2696.png?v=2.2.4', 'balanced')
 
 .bruiser
-  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f4aa-1f3fe.png?v=2.2.4', 'bruiser')
+  tile('https://cdn.jsdelivr.net/emojione/assets/png/1f4aa-1f3fe.png?v=2.2.4', 'bruiser')
 
 .skirmisher
-  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f52a.png?v=2.2.4', 'skirmisher')
+  tile('https://cdn.jsdelivr.net/emojione/assets/png/1f52a.png?v=2.2.4', 'skirmisher')
 
 .mage
-  tile('http://cdn.jsdelivr.net/emojione/assets/png/2728.png?v=2.2.4', 'mage')
+  tile('https://cdn.jsdelivr.net/emojione/assets/png/2728.png?v=2.2.4', 'mage')
 
 .male
-  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f57a.png?v=2.2.4', '% male')
+  tile('https://cdn.jsdelivr.net/emojione/assets/png/1f57a.png?v=2.2.4', '% male')
 
 .female
-  tile('http://cdn.jsdelivr.net/emojione/assets/png/1f483.png?v=2.2.4', '% female')
+  tile('https://cdn.jsdelivr.net/emojione/assets/png/1f483.png?v=2.2.4', '% female')
 
 footer
   font-size .6rem
-  padding 1rem 0
+  padding-bottom 2rem
   text-align center
 
 @media only screen and (max-width 715px)
@@ -190,6 +190,9 @@ footer
 
   .characters
     order 2
+
+  .platform
+    padding 1rem .5rem
 
 @media only screen
   .character
@@ -211,9 +214,19 @@ footer
   .platform > .metrics .metric
     width 320px - 16px * 2
 
+  .platform
+    padding 1.5rem
+
   .characters
     flex 1
 
-@media only screen and (min-width 810px)
+  .character
+    width 33%
+
+@media only screen and (min-width 750px)
+  .character
+    width 25%
+
+@media only screen and (min-width 850px)
   .character
     width 20%
