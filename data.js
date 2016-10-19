@@ -30,6 +30,33 @@ function sexesMetricVisitor (metrics) {
   sexes.unknownPercent = Math.floor(demographics.unknownSex / demographics.total * 100) + '%';
 }
 
+function agesMetricVisitor (metrics) {
+  var demographics = metrics.demographics;
+
+  metrics.ages = {
+    'child': {
+      keys: 'cm cf'.split(' '),
+      percent: Math.floor(demographics.child / demographics.total * 100) + '%'
+    },
+    'young': {
+      keys: 'ym yf'.split(' '),
+      percent: Math.floor(demographics.young / demographics.total * 100) + '%'
+    },
+    'adult': {
+      keys: 'am af'.split(' '),
+      percent: Math.floor(demographics.adult / demographics.total * 100) + '%'
+    },
+    'old': {
+      keys: 'om of'.split(' '),
+      percent: Math.floor(demographics.old / demographics.total * 100) + '%'
+    },
+    'unknown': {
+      keys: 'um uf'.split(' '),
+      percent: Math.floor(demographics.unknownAge / demographics.total * 100) + '%'
+    }
+  };
+}
+
 function rolesMetricVisitor (metrics) {
   var demographics = metrics.demographics;
   var roles = metrics.roles || {};
@@ -85,8 +112,7 @@ function demographicMetrics (metrics, character) {
   demographics[character.role]++;
 }
 
-
-var platformVisitors = [sexesMetricVisitor, rolesMetricVisitor];
+var platformVisitors = [sexesMetricVisitor, rolesMetricVisitor, agesMetricVisitor];
 var gameVisitors = [sexesMetricVisitor];
 
 Object.keys(data).forEach(function (gameName) {
@@ -105,8 +131,6 @@ Object.keys(data).forEach(function (gameName) {
 
   game.metrics = {};
 
-  var total = Object.keys(game.characters).length;
-
   Object.keys(game.characters).forEach(function (characterName) {
     var character = game.characters[characterName];
     demographicMetrics(platform.metrics, character);
@@ -120,7 +144,6 @@ Object.keys(data).forEach(function (gameName) {
   gameVisitors.forEach(function (visitor) {
     visitor(game.metrics);
   });
-
 });
 
 var platformTuples = [];

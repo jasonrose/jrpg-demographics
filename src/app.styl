@@ -36,11 +36,10 @@ body
 
   > .metrics
     border-bottom .5rem solid #999
-    margin 0
+    display flex
+    flex-flow row wrap
+    justify-content flex-start
     width 100%
-
-    .metric
-      margin-bottom 1rem
 
 .game
   border 0 solid #999
@@ -79,9 +78,6 @@ h1
   margin-bottom 1rem
   text-align center
   min-width 95px
-
-.metrics
-  width 100%
 
 i
   cursor pointer
@@ -185,8 +181,13 @@ footer
     justify-content center
 
   .metrics
-    margin-bottom 1.5rem
     order 1
+
+  .metric
+    margin-bottom 1.5rem
+
+  .metrics_grid
+    margin-bottom 0
 
   .characters
     order 2
@@ -213,6 +214,9 @@ footer
   .metrics,
   .platform > .metrics .metric
     width 320px - 16px * 2
+
+  .metrics_grid + .metrics_grid
+    margin-left 2rem
 
   .platform
     padding 1.5rem

@@ -1,5 +1,6 @@
 include metrics/sexes
 include metrics/roles
+include metrics/ages
 
 doctype html
 html(lang='en')
@@ -21,8 +22,11 @@ html(lang='en')
                     span=platform.title.toUpperCase()
                     span.subtitle=' (' + platform.startYear + '–' + platform.endYear + ')'
                 .metrics
-                    +sexes(platform.metrics.sexes)
-                    +roles(platform.metrics.roles)
+                    .metrics_grid
+                        +sexes(platform.metrics.sexes)
+                        +roles(platform.metrics.roles)
+                    .metrics_grid
+                        +ages(platform.metrics.ages)
                 each game in platform.games
                     .game
                         h1
@@ -37,7 +41,7 @@ html(lang='en')
                                         i(class=character.role)
                         .metrics
                             +sexes(game.metrics.sexes)
-                            
+
         footer
             | © 2016 Jason Rose. Emoji provided free by
             =" "

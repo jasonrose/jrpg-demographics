@@ -1,5 +1,12 @@
 .metrics
-  font-size .8rem
+  font-size .9rem
+  width 100%
+
+.metrics_grid
+  justify-content space-between
+  display flex
+  flex-flow column
+  margin-bottom 1rem
 
 .sexes
   align-items stretch
@@ -36,7 +43,7 @@
   align-items flex-end
   display flex
   flex-flow row
-  height 100px
+  height 150px
 
   .entry
     align-items center
@@ -53,3 +60,10 @@
       margin-top .25rem
       min-height .25rem
       width 100%
+
+.ages
+  .age_value
+    display inline-block
+    line-height $tile_dimension
+    height $tile_dimension
+    margin 5px
