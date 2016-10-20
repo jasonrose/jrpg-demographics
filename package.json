@@ -4,11 +4,12 @@
   "description": "JRPG Demographics Site",
   "main": "index.js",
   "scripts": {
-    "build": "npm-run-all --sequential clean make-dirs --parallel stylus-prod pug-prod",
+    "build": "npm-run-all --sequential clean make-dirs --parallel stylus-prod pug-prod --sequential inliner",
     "clean": "rimraf ./build",
-    "deploy": "gh-pages -d ./build",
+    "deploy": "gh-pages -d ./build/publish",
+    "inliner": "inliner build/index.html > build/publish/index.html",
     "live-server": "live-server ./build --port=3456 --wait=1000",
-    "make-dirs": "mkdirp build",
+    "make-dirs": "mkdirp build/publish",
     "make-files": "copy index.html ./build",
     "predeploy": "npm run build",
     "pug": "pug --obj data.js src/index.pug --out ./build",
@@ -34,6 +35,7 @@
     "autoprefixer-stylus": "0.10.0",
     "copy": "0.3.0",
     "gh-pages": "0.11.0",
+    "inliner": "1.9.5",
     "live-server": "1.1.0",
     "mkdirp": "0.5.1",
     "npm-run-all": "3.1.0",
@@ -45,6 +47,6 @@
     "watch-compile": "0.2.3"
   },
   "dependencies": {
-    "reset-css": "^2.0.20160720"
+    "reset-css": "2.0.20160720"
   }
 }
