@@ -35,22 +35,27 @@ function agesMetricVisitor (metrics) {
 
   metrics.ages = {
     'child': {
+      friendlyAge: 'child',
       keys: 'cm cf'.split(' '),
       percent: Math.floor(demographics.child / demographics.total * 100) + '%'
     },
     'young': {
+      friendlyAge: 'young',
       keys: 'ym yf'.split(' '),
       percent: Math.floor(demographics.young / demographics.total * 100) + '%'
     },
     'adult': {
+      friendlyAge: 'adult',
       keys: 'am af'.split(' '),
       percent: Math.floor(demographics.adult / demographics.total * 100) + '%'
     },
     'old': {
+      friendlyAge: 'old',
       keys: 'om of'.split(' '),
       percent: Math.floor(demographics.old / demographics.total * 100) + '%'
     },
     'unknown': {
+      friendlyAge: 'unknown age',
       keys: 'um uf'.split(' '),
       percent: Math.floor(demographics.unknownAge / demographics.total * 100) + '%'
     }
@@ -84,6 +89,21 @@ function demographicMetrics (metrics, character) {
     unknownSex: 0,
     young: 0
   };
+
+  var friendlySexes = {
+    f: 'female',
+    m: 'male',
+    unknown: 'unknown sex'
+  };
+
+  var friendlyAges = {
+    c: 'child',
+    y: 'young',
+    a: 'adult',
+    o: 'old',
+    u: 'unknown age'
+  };
+
   metrics.demographics = demographics;
 
   demographics.total++;
@@ -99,15 +119,16 @@ function demographicMetrics (metrics, character) {
   } else {
     demographics.unknownAge++;
   }
+  character.friendlyAge = friendlyAges[character.age];
 
   if (character.sex === 'f') {
     demographics.female++;
-  }
-  else if (character.sex === 'm') {
+  } else if (character.sex === 'm') {
     demographics.male++;
   } else {
     demographics.unknownSex++;
   }
+  character.friendlySex = friendlySexes[character.sex];
 
   demographics[character.role]++;
 }

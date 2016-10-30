@@ -1,8 +1,9 @@
 mixin roles(metric)
-  .metric.roles
+  figure.metric.roles
     each role in metric.keys
       .entry
         div=metric[role]
+          span.hidden=' ' + role
         .bar(style='height: ' + metric[role])
         i(class=role)
     

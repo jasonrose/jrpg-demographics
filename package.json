@@ -12,7 +12,7 @@
     "make-dirs": "mkdirp build/publish",
     "make-files": "copy index.html ./build",
     "predeploy": "npm run build",
-    "pug": "pug --obj data.js src/index.pug --out ./build",
+    "pug": "pug --obj data.js src/*.pug --out ./build",
     "pug-dev": "npm run pug -- --pretty",
     "pug-prod": "npm run pug -- --no-debug",
     "start": "npm-run-all --sequential clean make-dirs make-files --parallel stylus-dev pug-dev watch-compile live-server",

@@ -20,6 +20,9 @@ html
 *, *:before, *:after
   box-sizing inherit
 
+.hidden
+  display none
+
 body
   background linear-gradient(to bottom, $color_blue, lighten($color_blue, 50%))
   margin auto
@@ -33,6 +36,7 @@ body
   > h1
     font-size 1.75rem
     font-weight bold
+    margin-bottom 2rem
 
   > .metrics
     border-bottom .5rem solid #999
@@ -55,19 +59,17 @@ body
     border-bottom 0
   }
 
-h1
+h2
   font-size 1.25rem
   font-weight 900
   margin-bottom 2rem
 
-  span
-    display block
-
-  .subtitle
-    color #777
-    font-size 1rem
-    font-weight 500
-    margin-top .25rem
+.subtitle
+  color #777
+  display block
+  font-size 1rem
+  font-weight 500
+  margin-top .25rem
 
 .characters
   align-content flex-start
@@ -209,7 +211,7 @@ footer
     width 20%
 
 @media only screen and (min-width 716px)
-  h1
+  h2
     flex 0 1 100vw
 
   .metrics,
