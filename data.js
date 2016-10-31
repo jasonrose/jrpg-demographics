@@ -138,6 +138,7 @@ var gameVisitors = [sexesMetricVisitor];
 
 Object.keys(data).forEach(function (gameName) {
   var game = data[gameName];
+  game.slug = game.title.replace(/[^a-zA-Z0-9_-]/g, '_').toLowerCase();
 
   var platform = platforms[game.platform] || {
     endYear: Number.MIN_VALUE,

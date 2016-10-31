@@ -1,0 +1,33 @@
+include ../metrics/sexes
+include ../metrics/roles
+include ../metrics/ages
+
+mixin platform(platform)
+  section.platform
+    h1
+        span=platform.title.toUpperCase()
+        span.subtitle=' (' + platform.startYear + '–' + platform.endYear + ')'
+    aside.metrics
+        h3.hidden=platform.title.toUpperCase() + ' metrics'
+        .metrics_grid
+            +sexes(platform.metrics.sexes)
+            +roles(platform.metrics.roles)
+        .metrics_grid
+            +ages(platform.metrics.ages)
+    each game in platform.games
+        section.game
+            h2
+                a(id=game.slug, href='#' + game.slug)=game.title
+                span.subtitle='(' + game.year + ', ' + game.platform.toUpperCase() + ')'
+            ul.characters
+                each character, characterName in game.characters
+                    li.character
+                        h3=characterName
+                        div
+                            span.hidden=character.friendlyAge + ' ' + character.friendlySex + ' ' + character.role
+                            i(class=character.age + character.sex)
+                            i(class=character.role)
+            aside.metrics
+                h3.hidden=game.title + ' metrics'
+                +sexes(game.metrics.sexes)
+                

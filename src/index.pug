@@ -1,6 +1,5 @@
-include metrics/sexes
-include metrics/roles
-include metrics/ages
+
+include games/platform
 
 doctype html
 html(lang='en')
@@ -14,35 +13,12 @@ html(lang='en')
         meta(property='og:image', content='https://cdn.jsdelivr.net/emojione/assets/png/1f57a.png?v=2.2.4')
         meta(property='og:url', content='https://jasonrose.github.io/jrpg-demographics')
         link(rel='canonical', href='https://jasonrose.github.io/jrpg-demographics')
-        link(rel='icon', type='image/png', href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAFP0lEQVR4Ae2ZBYzbSBSGKzrRQcTSiSI6ZubzMTMzM3NPVGZm7nKZmb1l7jLvymVuvWXuu/mzedZk5NhZkmZytfQphsT2/w+999Lm0mbAZvxGs9tYglcF7RUsBf5eP4EjmG6q4IjgV0GBgJpJxDTxnwpcAbUQlmniqYVpb5IB7v/dAGoFLJMmPmphCkxq/QxfEQuuIFp3VwP50caIt41aAZIuecuuJqr7JpHCZzxDcN0D51bfhPX/tpSeWffNpwJX8Ku2BgAWfmD9x3S08DPVEO8agKAUhL96oeKrftLvX9V3CICyN2n9hFdo0O/3xti54oME8XVL3uVr2Me5qO8z1m75dEHbagh3L1Z9TSdXxQzrp1O4Sx6V7xOtvLZhf+MDNK3PEywSZsgG4Fi9ZvmJF9DRZfPpXPEX5E57G598j091MWG63OpU/RnRvMsw1mMtO/LfBwB3dQY9gq9x77D8xIPT+QV0uuQvOpH/kTqMIroshY4ArY+XwsQGE2AGjlNFNcAWEHN0ydKYAWc2fkrHl3xA50u/5OVSs6GAWR5DAfslLzXJgBX93E+rcnfEhJ/KL6ZzqwobesKa6VS/+CsYoV+k6PUCsNnCEhczAuJOl3+prgTqkAAWixcQKMvaRXtnVUO8x86JJTT41a236WhAv2RxAAzIavcwLRn5XGzCmzvoaRrf1Ur4zrZ5k6NCdIaAZLj1JdrrGhS9qsYBaotDOFYGGAFT+NrhtX0dIRaQyuaR++j40lIIdwSW7hUgYlId//UbetCawXtk0SoFgtu0FS5NXAmJUd3kqXRq03Ciyg5EtT95gi+Ilr9Y9i9RWV86t2EGxnmQeDPSYrSQwAuLD054weu+mMV5/B6f3Z0O5LxOF1ev4XOY5PyE24KoKeItgauKWDPoEG2b7CQYAOEH8973jrHU+Qg3pxzGS1YYdRO2eaJPzO3P+zBJ+W4aigcbhh6QewHv+43/V9NOPAPBKjun15o36aGVQsQ6ggLlHK/lwIvu6heWm2UAljplwlPpF/+OrV6DWLnleV/5XobuBrQPEP8rfy/MAMz+SSZCW3cDCpKIn658zwkyoGjMHnlf/p6ruwGUhKj6vSYaAPStCvPYRYbGS9vh+RVIUiJKYNQEAwyIBdQlTDqWixm/+hkgRYQIjIIMaK+zAY6AgJynK90/IywOkCdB5Au4bsREqNTpkhngBEWCiAfkKg9/x4h5oHRYWQbSWKS44MLG4ShWQkhUygpJRR7zEM+9B8OCv2NMSCwXM1ClPTz1bTts/CMrZAMOzqsMS4VBhs4GOGxA/J8aOQCa7ieoJqcOtX1PuJwMLex0kCb/upeyv9xFYz7cgYInZX66k3Q24FcBSbjy31pLux/qZ/c6nGBA3re7aUm3xNQXxzP/2UcTftjtCNHtJSwBzwHamtAPwuNkyP/QiNZsj5YEaFVu3ZAEqgk1PwPyhfntDgBu/bDCZyTtDFAJySQz0t4ALp4aXwVOoUhKPjgcK4T0hE9NNyCiilJC3PQ3IcyAFE2w0s2AAr6eoglOuhlAuNZIE6Imio+maoDyGzeVpMjksnlBE3pNPxMN6BdWNfYfBqmbZmrl+LYmxA4gmg7j321i8AR+TYfub6dugMHDIGA569cMA8Btpv9j3L6ZBmSYYIDTDAMiAgrhNlNTYGA3Y/gwts4GZCzq6V/2wvkpHUvsVExc2HOnm+we0ztXOFpHho888Qw9/ezr9Mnbv3m88tKHhPMCV2ALAgXEv0cB2AI9l0Xl5afHIYXA1UD5TYEgw8eU6RrINXq7tP0HWby1SDKlYOsAAAAASUVORK5CYII=')
+        link(rel='icon', type='image/png', href='https://cdn.jsdelivr.net/emojione/assets/png/1f57a.png?v=2.2.4')
         link(rel='stylesheet', href='app.css', media='all')
 
     body
         each platform in data
-            .platform
-                h1
-                    span=platform.title.toUpperCase()
-                    span.subtitle=' (' + platform.startYear + '–' + platform.endYear + ')'
-                .metrics
-                    .metrics_grid
-                        +sexes(platform.metrics.sexes)
-                        +roles(platform.metrics.roles)
-                    .metrics_grid
-                        +ages(platform.metrics.ages)
-                each game in platform.games
-                    .game
-                        h2=game.title
-                            span.subtitle='(' + game.year + ', ' + game.platform.toUpperCase() + ')'
-                        ul.characters
-                            each character, characterName in game.characters
-                                li.character
-                                    h3=characterName
-                                    div
-                                        span.hidden=character.friendlyAge + ' ' + character.friendlySex + ' ' + character.role
-                                        i(class=character.age + character.sex)
-                                        i(class=character.role)
-                        .metrics
-                            +sexes(game.metrics.sexes)
+            +platform(platform)
 
         footer
             | © 2016 Jason Rose. Emoji provided free by

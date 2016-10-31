@@ -9,6 +9,8 @@ $color_purple = rgba(194, 143, 239, 1)
 $color_red = rgba(255, 72, 72, 1)
 $color_blue = rgba(66, 139, 193, 1)
 
+@import './mixins/_mixins'
+
 @import './metrics/_metrics'
 
 html
@@ -22,6 +24,14 @@ html
 
 .hidden
   display none
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus
+  color initial
+  text-decoration none
 
 body
   background linear-gradient(to bottom, $color_blue, lighten($color_blue, 50%))
@@ -118,12 +128,6 @@ i
       transform translateX(-50%)
       z-index 1
 
-tile(url, tooltip)
-  background url(url) no-repeat center / contain
-
-  &:hover:after
-    content tooltip
-
 .af
   tile('https://cdn.jsdelivr.net/emojione/assets/png/1f469-1f3fb.png?v=2.2.4', 'woman')
 
@@ -165,12 +169,6 @@ tile(url, tooltip)
 
 .mage
   tile('https://cdn.jsdelivr.net/emojione/assets/png/2728.png?v=2.2.4', 'mage')
-
-.male
-  tile('https://cdn.jsdelivr.net/emojione/assets/png/1f57a.png?v=2.2.4', '% male')
-
-.female
-  tile('https://cdn.jsdelivr.net/emojione/assets/png/1f483.png?v=2.2.4', '% female')
 
 footer
   font-size .6rem
