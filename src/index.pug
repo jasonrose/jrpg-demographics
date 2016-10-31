@@ -17,6 +17,65 @@ html(lang='en')
         link(rel='stylesheet', href='app.css', media='all')
 
     body
+        header
+            h1 JRPG Demographics
+            p.subheading Roles, ages, and sexes of playable characters in JRPGs
+
+            nav
+                h2 Quick Links:
+                each platform in data
+                    a(href='#' + platform.title)=platform.title.toUpperCase()
+
+            h2 Roles
+            table.roles
+                tr
+                    td
+                        i.balanced
+                    td Balanced characters are either very good at everything or very bad at everything 
+                tr
+                    td
+                        i.bruiser
+                    td Bruisers are typically strong but slow and lacking in magic
+                tr
+                    td
+                        i.mage
+                    td Mages are good at magic but lacking in strength or staying power
+                tr
+                    td
+                        i.skirmisher
+                    td Skirmishers are fast and strong or have nontraditional combat utility
+                tr
+                    td
+                        i.striker
+                    td Strikers are good at attacking and either magic or defense but lack in some other area
+
+            h2 Ages
+            table.ages
+                tr
+                    td
+                        i.cm
+                        i.cf
+                    td Children are or appear to be pre-teens
+                tr
+                    td
+                        i.ym
+                        i.yf
+                    td Young adults are teenaged and usually living with a caretaker, or are treated as young or immature by others
+                tr
+                    td
+                        i.am
+                        i.af
+                    td Adults are independent and not so old as to show signs of old age
+                tr
+                    td
+                        i.om
+                        i.of
+                    td Elderly adults are visibly old or identified as old by others
+                tr
+                    td
+                        i.um
+                    td Unknown characters have either unknown or mysterious ages
+
         each platform in data
             +platform(platform)
 

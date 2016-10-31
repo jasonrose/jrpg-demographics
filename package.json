@@ -4,7 +4,7 @@
   "description": "JRPG Demographics Site",
   "main": "index.js",
   "scripts": {
-    "build": "npm-run-all --sequential clean make-dirs --parallel stylus-prod pug-prod --sequential inliner",
+    "build": "npm-run-all --sequential clean make-dirs --parallel stylus-prod pug-prod --sequential purify inliner",
     "clean": "rimraf ./build",
     "deploy": "gh-pages -d ./build/publish",
     "inliner": "inliner build/index.html > build/publish/index.html",
@@ -14,6 +14,7 @@
     "predeploy": "npm run build",
     "pug": "pug --obj data.js src/*.pug --out ./build",
     "pug-dev": "npm run pug -- --pretty",
+    "purify": "purifycss build/app.css build/index.html --info --out build/app.css",
     "pug-prod": "npm run pug -- --no-debug",
     "start": "npm-run-all --sequential clean make-dirs make-files --parallel stylus-dev pug-dev watch-compile live-server",
     "stylus": "stylus -u autoprefixer-stylus --with \"{ browsers: ['last 2 versions'] }\" --include-css --out ./build/app.css ./src/app.styl",

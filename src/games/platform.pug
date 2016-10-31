@@ -5,7 +5,7 @@ include ../metrics/ages
 mixin platform(platform)
   section.platform
     h1
-        span=platform.title.toUpperCase()
+        a(id=platform.title, href='#' + platform.title)=platform.title.toUpperCase()
         span.subtitle=' (' + platform.startYear + '–' + platform.endYear + ')'
     aside.metrics
         h3.hidden=platform.title.toUpperCase() + ' metrics'
