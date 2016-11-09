@@ -18,16 +18,16 @@ function updatePlatform (platform, game) {
 
 function sexesMetricVisitor (metrics) {
   var sexes = metrics.sexes || {
-    femalePercent: '0%',
-    malePercent: '0%',
-    unknownPercent: '0%'
+    femalePercent: '0',
+    malePercent: '0',
+    unknownPercent: '0'
   };
   metrics.sexes = sexes;
   var demographics = metrics.demographics;
 
-  sexes.malePercent = Math.floor(demographics.male / demographics.total * 100) + '%';
-  sexes.femalePercent = Math.floor(demographics.female / demographics.total * 100) + '%';
-  sexes.unknownPercent = Math.floor(demographics.unknownSex / demographics.total * 100) + '%';
+  sexes.malePercent = Math.floor(demographics.male / demographics.total * 100);
+  sexes.femalePercent = Math.floor(demographics.female / demographics.total * 100);
+  sexes.unknownPercent = Math.floor(demographics.unknownSex / demographics.total * 100);
 }
 
 function agesMetricVisitor (metrics) {
@@ -37,27 +37,27 @@ function agesMetricVisitor (metrics) {
     'child': {
       friendlyAge: 'child',
       keys: 'cm cf'.split(' '),
-      percent: Math.floor(demographics.child / demographics.total * 100) + '%'
+      percent: Math.floor(demographics.child / demographics.total * 100)
     },
     'young': {
       friendlyAge: 'young',
       keys: 'ym yf'.split(' '),
-      percent: Math.floor(demographics.young / demographics.total * 100) + '%'
+      percent: Math.floor(demographics.young / demographics.total * 100)
     },
     'adult': {
       friendlyAge: 'adult',
       keys: 'am af'.split(' '),
-      percent: Math.floor(demographics.adult / demographics.total * 100) + '%'
+      percent: Math.floor(demographics.adult / demographics.total * 100)
     },
     'old': {
       friendlyAge: 'old',
       keys: 'om of'.split(' '),
-      percent: Math.floor(demographics.old / demographics.total * 100) + '%'
+      percent: Math.floor(demographics.old / demographics.total * 100)
     },
     'unknown': {
       friendlyAge: 'unknown age',
       keys: 'um uf'.split(' '),
-      percent: Math.floor(demographics.unknownAge / demographics.total * 100) + '%'
+      percent: Math.floor(demographics.unknownAge / demographics.total * 100)
     }
   };
 }
@@ -67,7 +67,7 @@ function rolesMetricVisitor (metrics) {
   var roles = metrics.roles || {};
   roles.keys = 'balanced bruiser mage skirmisher striker'.split(' ');
   roles.keys.forEach(function (role) {
-    roles[role] = Math.floor(demographics[role] / demographics.total * 100) + '%';
+    roles[role] = Math.floor(demographics[role] / demographics.total * 100);
   });
   metrics.roles = roles;
 }
