@@ -14,7 +14,7 @@
     "predeploy": "npm run build",
     "pug": "pug --obj data.js src/*.pug --out ./build",
     "pug-dev": "npm run pug -- --pretty",
-    "purify": "purifycss build/app.css build/index.html --info --out build/app.css",
+    "purify": "postcss --use usedcss --usedcss.html=./build/index.html --output ./build/app.css ./build/app.css",
     "pug-prod": "npm run pug -- --no-debug",
     "start": "npm-run-all --sequential clean make-dirs make-files --parallel stylus-dev pug-dev watch-compile live-server",
     "stylus": "stylus -u autoprefixer-stylus --with \"{ browsers: ['last 2 versions'] }\" --include-css --out ./build/app.css ./src/app.styl",
@@ -40,12 +40,13 @@
     "live-server": "1.1.0",
     "mkdirp": "0.5.1",
     "npm-run-all": "3.1.0",
+    "postcss-cli": "2.6.0",
     "pug-cli": "1.0.0-alpha6",
-    "purify-css": "1.1.9",
     "require-directory": "2.1.1",
     "rimraf": "2.5.4",
     "sentry": "0.1.2",
-    "stylus": "0.54.5"
+    "stylus": "0.54.5",
+    "usedcss": "1.0.7"
   },
   "dependencies": {
     "reset-css": "2.0.20160720"
