@@ -45,8 +45,7 @@
     "require-directory": "2.1.1",
     "rimraf": "2.5.4",
     "sentry": "0.1.2",
-    "stylus": "0.54.5",
-    "watch-compile": "0.2.3"
+    "stylus": "0.54.5"
   },
   "dependencies": {
     "reset-css": "2.0.20160720"

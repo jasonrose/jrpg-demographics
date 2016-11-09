@@ -24,30 +24,30 @@ html(lang='en')
             nav
                 h2 Quick Links:
                 each platform in data
-                    a(href='#' + platform.title)=platform.title.toUpperCase()
+                    a.nav_item(href='#' + platform.title)=platform.title.toUpperCase()
 
             h2 Roles
             table.roles
                 tr
                     td
                         i.balanced
-                    td Balanced characters are either very good at everything or very bad at everything 
+                    td Balanced characters are either very good or very bad at everything 
                 tr
                     td
                         i.bruiser
-                    td Bruisers are typically strong but slow and lacking in magic
+                    td Bruisers are typically strong but slow and bad at magic
                 tr
                     td
                         i.mage
-                    td Mages are good at magic but lacking in strength or staying power
+                    td Mages are good at magic but lacking in strength, defense, or health
                 tr
                     td
                         i.skirmisher
-                    td Skirmishers are fast and strong or have nontraditional combat utility
+                    td Skirmishers are fast and are strong or have nontraditional combat utility
                 tr
                     td
                         i.striker
-                    td Strikers are good at attacking and either magic or defense but lack in some other area
+                    td Strikers are strong and either fast or good at magic but come up short elsewhere
 
             h2 Ages
             table.ages
@@ -60,7 +60,7 @@ html(lang='en')
                     td
                         i.ym
                         i.yf
-                    td Young adults are teenaged and usually living with a caretaker, or are treated as young or immature by others
+                    td Young adults are teenaged and usually living with a caretaker, or are treated as young by others
                 tr
                     td
                         i.am
@@ -80,6 +80,15 @@ html(lang='en')
             +platform(platform)
 
         footer
-            | © 2016 Jason Rose. Emoji provided free by
+            | © #{new Date().getFullYear()} Jason Rose. Emoji provided free by
             =" "
             a(href='http://emojione.com') EmojiOne
+        script.
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-87166105-1', 'auto');
+            ga('send', 'pageview');
+            
