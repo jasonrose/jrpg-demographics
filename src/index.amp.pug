@@ -9,13 +9,14 @@ html(lang='en', amp)
         meta(property='og:site_name', content='JRPG Demographics')
         meta(property='og:title', content='JRPG Demographics')
         meta(property='og:description', content='A site dedicated to showing the gender, age, and role breakdowns of Japanese role playing games')
-        meta(property='og:image', content='https://cdn.jsdelivr.net/emojione/assets/png/1f57a.png?v=2.2.4')
+        meta(property='og:image', content='https://cdn.jsdelivr.net/emojione/assets/svg/1f57a.svg?v=2.2.4')
         meta(property='og:url', content='https://jasonrose.github.io/jrpg-demographics')
         meta(name='twitter:card', content='summary')
         meta(name='twitter:site', content='@sansthesis')
         meta(name='twitter:title', content='JRPG Demographics')
         meta(name='twitter:description', content='A site dedicated to showing the gender, age, and role breakdowns of Japanese role playing games')
-        meta(name='twitter:image', content='https://cdn.jsdelivr.net/emojione/assets/png/1f57a.png?v=2.2.4')
+        meta(name='twitter:image', content='https://cdn.jsdelivr.net/emojione/assets/svg/1f57a.svg?v=2.2.4')
+        link(rel='icon', type='image/svg', href='https://cdn.jsdelivr.net/emojione/assets/svg/1f57a.svg?v=2.2.4')
         link(rel='canonical', href='index.html')
         link(rel='stylesheet', href='app.css', media='all')
         style(amp-boilerplate).
@@ -23,6 +24,39 @@ html(lang='en', amp)
         noscript
             style(amp-boilerplate).
                 body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+        script(type='application/ld+json').
+            {
+                "@context": "http://schema.org",
+                "@type": "NewsArticle",
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://jasonrose.github.io/jrpg-demographics/index.amp.html"
+                },
+                "headline": "JRPG Demographics: Roles, ages, and sexes of playable characters in JRPGs",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://cdn.jsdelivr.net/emojione/assets/png/1f57a.png?v=2.2.4",
+                    "height": 800,
+                    "width": 800
+                },
+                "datePublished": "#{new Date().toISOString()}",
+                "dateModified": "#{new Date().toISOString()}",
+                "author": {
+                    "@type": "Person",
+                    "name": "Jason Rose"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "JRPG Demographics",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://cdn.jsdelivr.net/emojione/assets/png/1f57a.png?v=2.2.4",
+                        "width": 60,
+                        "height": 60
+                    }
+                },
+                "description": "A site dedicated to showing the gender, age, and role breakdowns of Japanese role playing games"
+            }
 
     body
         include _body.pug
