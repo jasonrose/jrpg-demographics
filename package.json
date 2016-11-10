@@ -9,7 +9,7 @@
     "deploy": "gh-pages -d ./build/publish",
     "inliner": "npm-run-all --parallel inliner-index inliner-amp",
     "inliner-index": "inliner build/index.html > build/publish/index.html",
-    "inliner-amp": "inliner build/index.amp.html > build/publish/index.amp.html",
+    "inliner-amp": "sed -i'' 's^ src=^ asrc=^g' build/index.amp.html && inliner build/index.amp.html > build/publish/index.amp.html && sed -i'' 's^ asrc=^ src=^g' build/publish/index.amp.html && sed -i'' 's^<style>^<style amp-custom>^g' build/publish/index.amp.html",
     "live-server": "live-server ./build --port=3456 --wait=1000",
     "make-dirs": "mkdirp build/publish",
     "make-files": "copy index.html ./build",
