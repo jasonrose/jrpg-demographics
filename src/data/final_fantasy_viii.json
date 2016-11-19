@@ -1,0 +1,37 @@
+{
+  "title": "Final Fantasy VIII",
+  "year": 1999,
+  "platform": "psx",
+  "characters": {
+    "Irvine": {
+      "sex": "m",
+      "age": "a",
+      "role": "skirmisher"
+    },
+    "Quistis": {
+      "sex": "f",
+      "age": "a",
+      "role": "striker"
+    },
+    "Rinoa": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    },
+    "Squall": {
+      "sex": "m",
+      "age": "a",
+      "role": "balanced"
+    },
+    "Selphie": {
+      "sex": "m",
+      "age": "a",
+      "role": "mage"
+    },
+    "Zell": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    }
+  }
+}

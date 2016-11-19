@@ -1,0 +1,47 @@
+{
+  "title": "Final Fantasy IX",
+  "year": 2000,
+  "platform": "psx",
+  "characters": {
+    "Amarant": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    },
+    "Dagger": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    },
+    "Eiko": {
+      "sex": "f",
+      "age": "c",
+      "role": "mage"
+    },
+    "Freya": {
+      "sex": "f",
+      "age": "a",
+      "role": "striker"
+    },
+    "Quina": {
+      "sex": "u",
+      "age": "u",
+      "role": "balanced"
+    },
+    "Steiner": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Vivi": {
+      "sex": "m",
+      "age": "c",
+      "role": "mage"
+    },
+    "Zidane": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    }
+  }
+}
