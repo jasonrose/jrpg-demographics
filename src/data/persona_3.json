@@ -1,0 +1,52 @@
+{
+  "title": "Persona 3",
+  "year": 2006,
+  "platform": "ps2",
+  "characters": {
+    "Akihiko": {
+      "sex": "m",
+      "age": "y",
+      "role": "striker"
+    },
+    "Aigis": {
+      "sex": "f",
+      "age": "y",
+      "role": "bruiser"
+    },
+    "Junpei": {
+      "sex": "m",
+      "age": "y",
+      "role": "bruiser"
+    },
+    "Ken": {
+      "sex": "m",
+      "age": "c",
+      "role": "skirmisher"
+    },
+    "Koromaru": {
+      "sex": "m",
+      "age": "u",
+      "role": "skirmisher"
+    },
+    "Minato": {
+      "sex": "m",
+      "age": "y",
+      "role": "balanced"
+    },
+    "Mitsuru": {
+      "sex": "f",
+      "age": "y",
+      "role": "mage"
+    },
+    "Shinjiro": {
+      "sex": "m",
+      "age": "y",
+      "role": "bruiser"
+    },
+    "Yukari": {
+      "sex": "f",
+      "age": "y",
+      "role": "mage"
+    }
+  }
+}

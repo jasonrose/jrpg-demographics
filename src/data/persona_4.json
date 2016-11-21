@@ -1,0 +1,42 @@
+{
+  "title": "Persona 4",
+  "year": 2008,
+  "platform": "ps2",
+  "characters": {
+    "Chie": {
+      "sex": "f",
+      "age": "y",
+      "role": "bruiser"
+    },
+    "Kanji": {
+      "sex": "m",
+      "age": "y",
+      "role": "bruiser"
+    },
+    "Naoto": {
+      "sex": "f",
+      "age": "y",
+      "role": "skirmisher"
+    },
+    "Teddie": {
+      "sex": "m",
+      "age": "y",
+      "role": "mage"
+    },
+    "Yosuke": {
+      "sex": "m",
+      "age": "y",
+      "role": "striker"
+    },
+    "Yu": {
+      "sex": "m",
+      "age": "y",
+      "role": "balanced"
+    },
+    "Yukiko": {
+      "sex": "f",
+      "age": "y",
+      "role": "mage"
+    }
+  }
+}
