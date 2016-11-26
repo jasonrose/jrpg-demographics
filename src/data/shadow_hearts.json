@@ -1,0 +1,37 @@
+{
+  "title": "Shadow Hearts",
+  "year": 2001,
+  "platform": "ps2",
+  "characters": {
+    "Alice": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    },
+    "Halley": {
+      "sex": "m",
+      "age": "c",
+      "role": "skirmisher"
+    },
+    "Keith": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Margarete": {
+      "sex": "f",
+      "age": "a",
+      "role": "skirmisher"
+    },
+    "Yuri": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    },
+    "Zhuzhen": {
+      "sex": "m",
+      "age": "o",
+      "role": "mage"
+    }
+  }
+}

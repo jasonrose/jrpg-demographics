@@ -1,0 +1,47 @@
+{
+  "title": "Shadow Hearts: Covenant",
+  "year": 2004,
+  "platform": "ps2",
+  "characters": {
+    "Anastasia": {
+      "sex": "f",
+      "age": "y",
+      "role": "mage"
+    },
+    "Blanca": {
+      "sex": "m",
+      "age": "u",
+      "role": "balanced"
+    },
+    "Gepetto": {
+      "sex": "m",
+      "age": "o",
+      "role": "mage"
+    },
+    "Joachim": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Karin": {
+      "sex": "f",
+      "age": "a",
+      "role": "striker"
+    },
+    "Kurando": {
+      "sex": "m",
+      "age": "y",
+      "role": "striker"
+    },
+    "Lucia": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    },
+    "Yuri": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    }
+  }
+}

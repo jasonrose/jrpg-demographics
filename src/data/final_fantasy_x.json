@@ -1,0 +1,42 @@
+{
+  "title": "Final Fantasy X",
+  "year": 2001,
+  "platform": "ps2",
+  "characters": {
+    "Auron": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Kimahri": {
+      "sex": "m",
+      "age": "a",
+      "role": "balanced"
+    },
+    "Lulu": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    },
+    "Rikku": {
+      "sex": "f",
+      "age": "y",
+      "role": "skirmisher"
+    },
+    "Tidus": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    },
+    "Wakka": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Yuna": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    }
+  }
+}
