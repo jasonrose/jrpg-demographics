@@ -26,6 +26,38 @@ html
 .hidden
   display none
 
+.tooltip
+  background white
+  border 1px solid black
+  border-radius 3px
+  cursor pointer
+  display none
+  margin 5px
+  min-height $tile_dimension
+  padding 5px
+  position absolute
+  text-align center
+  vertical-align top
+  z-index 1
+
+  .tt:hover &
+    display block
+
+    &:before
+      background white
+      border 1px solid black
+      border-bottom 0
+      border-right 0
+      content ''
+      display block
+      height 8px
+      left 50%
+      position absolute
+      top -1px
+      transform translate(-50%, -50%) rotate(45deg)
+      width 8px
+      z-index 2
+
 a,
 a:hover,
 a:active,

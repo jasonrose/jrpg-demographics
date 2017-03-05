@@ -1,5 +1,21 @@
 tile(url, tooltip)
-  background url(url) no-repeat center / contain
+  background url(url)
+  background-repeat no-repeat
 
-  &:hover:after
-    content tooltip
+  i&
+    background-position center
+    background-size contain
+
+    &:hover:after
+      content tooltip
+
+  .character&
+  h3&
+    background-position-y 1.25rem
+    background-size 2rem
+
+  .character&
+    background-position-x 25%
+
+  h3&
+    background-position-x 75%
