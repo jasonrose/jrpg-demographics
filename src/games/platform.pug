@@ -21,10 +21,9 @@ mixin platform(platform)
                 span.subtitle='(' + game.year + ', ' + game.platform.toUpperCase() + ')'
             ul.characters
                 each character, characterName in game.characters
-                    li.character
+                    li.character(title=character.friendlyAge + ' ' + character.friendlySex + ' ' + character.role)
                         h3=characterName
                         div
-                            span.hidden=character.friendlyAge + ' ' + character.friendlySex + ' ' + character.role
                             i(class=character.age + character.sex)
                             i(class=character.role)
             aside.metrics

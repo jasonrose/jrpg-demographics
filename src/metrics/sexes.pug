@@ -2,11 +2,8 @@ mixin sexes(metric)
   figure.metric.sexes
     i.male
     .ratio
-      .mratio(class='width_' + metric.malePercent)=metric.malePercent + '%'
-        span.hidden=' male'
-      .uratio(class='width_' + metric.unknownPercent)
-        span.hidden=metric.unknownPercent + '% unknown sex'
-      .fratio(class='width_' + metric.femalePercent)=metric.femalePercent + '%'
-        span.hidden=' female'
+      .mratio(class='width_' + metric.malePercent, title=metric.malePercent + "% male")=metric.malePercent + '%'
+      .uratio(class='width_' + metric.unknownPercent, title=metric.unknownPercent + "% unknown sex")
+      .fratio(class='width_' + metric.femalePercent, title=metric.femalePercent + '% female')=metric.femalePercent + '%'
     i.female
     

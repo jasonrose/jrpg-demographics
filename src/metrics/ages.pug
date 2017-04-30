@@ -1,8 +1,7 @@
 mixin ages(metric)
   figure.metric.ages
     each category in metric
-      .entry
+      .entry(title=category.percent + '% ' + category.friendlyAge)
         each sex in category.keys
           i(class=sex)
         span.age_value= category.percent + '%'
-        span.hidden=' ' + category.friendlyAge
