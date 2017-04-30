@@ -1,0 +1,42 @@
+{
+  "title": "Tokyo Mirage Sessions: ♯FE",
+  "year": 2016,
+  "platform": "wiiu",
+  "characters": {
+    "Eleonora": {
+      "sex": "f",
+      "age": "y",
+      "role": "skirmisher"
+    },
+    "Itsuki": {
+      "sex": "m",
+      "age": "y",
+      "role": "balanced"
+    },
+    "Kiria": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    },
+    "Mamori": {
+      "sex": "f",
+      "age": "c",
+      "role": "bruiser"
+    },
+    "Touma": {
+      "sex": "m",
+      "age": "y",
+      "role": "striker"
+    },
+    "Tsubasa": {
+      "sex": "f",
+      "age": "y",
+      "role": "mage"
+    },
+    "Yashiro": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    }
+  }
+}

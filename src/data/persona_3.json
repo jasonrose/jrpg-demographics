@@ -3,15 +3,15 @@
   "year": 2006,
   "platform": "ps2",
   "characters": {
-    "Akihiko": {
-      "sex": "m",
-      "age": "y",
-      "role": "striker"
-    },
     "Aigis": {
       "sex": "f",
       "age": "y",
       "role": "bruiser"
+    },
+    "Akihiko": {
+      "sex": "m",
+      "age": "y",
+      "role": "striker"
     },
     "Junpei": {
       "sex": "m",

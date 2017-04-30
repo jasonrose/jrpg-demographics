@@ -1,0 +1,47 @@
+{
+  "title": "Persona 5",
+  "year": 2017,
+  "platform": "ps4",
+  "characters": {
+    "Akechi": {
+      "sex": "m",
+      "age": "y",
+      "role": "striker"
+    },
+    "Ann": {
+      "sex": "f",
+      "age": "y",
+      "role": "mage"
+    },
+    "Haru": {
+      "sex": "f",
+      "age": "y",
+      "role": "striker"
+    },
+    "Joker": {
+      "sex": "m",
+      "age": "y",
+      "role": "balanced"
+    },
+    "Makoto": {
+      "sex": "f",
+      "age": "y",
+      "role": "balanced"
+    },
+    "Morgana": {
+      "sex": "m",
+      "age": "u",
+      "role": "skirmisher"
+    },
+    "Ryuji": {
+      "sex": "m",
+      "age": "y",
+      "role": "bruiser"
+    },
+    "Yusuke": {
+      "sex": "m",
+      "age": "y",
+      "role": "striker"
+    }
+  }
+}
