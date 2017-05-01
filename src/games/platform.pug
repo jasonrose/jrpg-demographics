@@ -16,13 +16,14 @@ mixin platform(platform)
             +ages(platform.metrics.ages)
     each game in platform.games
         section.game
-            h2
-                a(id=game.slug, href='#' + game.slug)=game.title
-                span.subtitle='(' + game.year + ', ' + game.platform.toUpperCase() + ')'
+            .game_header
+                h2
+                    a(id=game.slug, href='#' + game.slug)=game.title
+                    span.subtitle='(' + game.year + ', ' + game.platform.toUpperCase() + ')'
+                aside.metrics
+                    h3.hidden=game.title + ' metrics'
+                    +sexes(game.metrics.sexes)
             ul.characters
                 each character, characterName in game.characters
                     li(class='character ' + character.age + character.sex + ' ' + character.role, title=character.friendlyAge + ' ' + character.friendlySex + ' ' + character.role)=characterName
-            aside.metrics
-                h3.hidden=game.title + ' metrics'
-                +sexes(game.metrics.sexes)
                 

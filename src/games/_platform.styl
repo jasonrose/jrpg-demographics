@@ -18,7 +18,7 @@
   border 0 solid #999
   border-bottom-width .25rem
   display flex
-  flex-flow row wrap
+  flex-flow column wrap
   margin-bottom 1rem
   max-width 960px
   padding 1rem .5rem
@@ -33,6 +33,11 @@
     font-weight 900
     margin-bottom 2rem
 
+.game_header
+  display flex
+  flex-flow column
+  margin-bottom 1rem
+
 .subtitle
   color #777
   display block
@@ -46,13 +51,13 @@
   flex-flow row wrap
 
 .character
-  margin-bottom 1rem
   height 16px + 5px + $tile_dimension
-  text-align center
-  min-width 95px
+  margin-bottom 1rem
   position relative
+  text-align center
+  width 33%
 
-  &::before,
+  &::before
   &::after
     content ''
     display block

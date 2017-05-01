@@ -172,13 +172,18 @@ footer
   padding-bottom 2rem
   text-align center
 
+@media only screen and (min-width 450px)
+  .character
+    width 25%
+
+@media only screen and (min-width 560px)
+  .character
+    width 20%
+
 @media only screen and (max-width 715px)
   .game
     flex-flow column nowrap
     justify-content center
-
-  .metrics
-    order 1
 
   .metric
     margin-bottom 1.5rem
@@ -186,9 +191,6 @@ footer
   .metrics_grid
     margin-bottom 0
     width 100%
-
-  .characters
-    order 2
 
   header
   .platform
@@ -201,43 +203,24 @@ footer
     > .subheading
       font-size 1.25rem
 
-@media only screen
-  .character
-    width 33%
-
-@media only screen and (min-width 450px)
-  .character
-    width 25%
-
-@media only screen and (min-width 560px) and (max-width 715px)
-  .character
-    width 20%
-
 @media only screen and (min-width 716px)
+  .character
+    width (100% / 6)
+
   .platform h2
     flex 0 1 100vw
 
   .metrics,
   .platform > .metrics .metric
+    min-width 320px - 16px * 2
     width 320px - 16px * 2
 
   .metrics_grid + .metrics_grid
     margin-left 2rem
 
+  .game_header
+    flex-flow row
+
   header,
   .platform
     padding 1.5rem
-
-  .characters
-    flex 1
-
-  .character
-    width 33%
-
-@media only screen and (min-width 750px)
-  .character
-    width 25%
-
-@media only screen and (min-width 850px)
-  .character
-    width 20%
