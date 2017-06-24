@@ -136,7 +136,7 @@ header
       border-bottom 0
       margin-bottom 0
       padding-bottom 0
-    
+
     td
       min-width ($tile_dimension * 2 + 10px * 2 + 10px)
       padding 0 10px 10px 0
@@ -149,7 +149,7 @@ header
   > nav
     border-bottom .5rem solid #999
     margin-bottom 2rem
-    padding-bottom 1rem 
+    padding-bottom 1rem
     text-align center
 
     > h2
@@ -181,10 +181,6 @@ footer
     width 20%
 
 @media only screen and (max-width 715px)
-  .game
-    flex-flow column nowrap
-    justify-content center
-
   .metric
     margin-bottom 1.5rem
 
@@ -207,8 +203,17 @@ footer
   .character
     width (100% / 6)
 
-  .platform h2
-    flex 0 1 100vw
+  .game_header
+    &:after
+      clear both
+      content ''
+      display table
+
+    h2
+      float left
+
+    .metrics
+      float right
 
   .metrics,
   .platform > .metrics .metric
@@ -217,9 +222,6 @@ footer
 
   .metrics_grid + .metrics_grid
     margin-left 2rem
-
-  .game_header
-    flex-flow row
 
   header,
   .platform

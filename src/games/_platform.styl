@@ -9,16 +9,18 @@
 
   > .metrics
     border-bottom .5rem solid #999
-    display flex
-    flex-flow row wrap
-    justify-content flex-start
     width 100%
+    &:after
+      clear both
+      content ''
+      display table
+
+  .metrics_grid
+    float left
 
 .game
   border 0 solid #999
   border-bottom-width .25rem
-  display flex
-  flex-flow column wrap
   margin-bottom 1rem
   max-width 960px
   padding 1rem .5rem
@@ -34,8 +36,6 @@
     margin-bottom 2rem
 
 .game_header
-  display flex
-  flex-flow column
   margin-bottom 1rem
 
 .subtitle
@@ -45,12 +45,13 @@
   font-weight 500
   margin-top .25rem
 
-.characters
-  align-content flex-start
-  display flex
-  flex-flow row wrap
+.characters:after
+  clear both
+  content ''
+  display table
 
 .character
+  float left
   height 16px + 5px + $tile_dimension
   margin-bottom 1rem
   position relative
