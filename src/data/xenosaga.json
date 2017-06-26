@@ -1,0 +1,37 @@
+{
+  "title": "Xenosaga",
+  "year": 2003,
+  "platform": "ps2",
+  "characters": {
+    "chaos": {
+      "sex": "m",
+      "age": "y",
+      "role": "balanced"
+    },
+    "Jr": {
+      "sex": "m",
+      "age": "c",
+      "role": "striker"
+    },
+    "KOS-MOS": {
+      "sex": "f",
+      "age": "a",
+      "role": "striker"
+    },
+    "MOMO": {
+      "sex": "f",
+      "age": "c",
+      "role": "mage"
+    },
+    "Shion": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    },
+    "Ziggy": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    }
+  }
+}

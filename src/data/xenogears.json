@@ -1,0 +1,52 @@
+{
+  "title": "Xenogears",
+  "year": 1998,
+  "platform": "psx",
+  "characters": {
+    "Bart": {
+      "sex": "m",
+      "age": "a",
+      "role": "skirmisher"
+    },
+    "Billy": {
+      "sex": "m",
+      "age": "y",
+      "role": "striker"
+    },
+    "Chu-Chu": {
+      "sex": "f",
+      "age": "u",
+      "role": "balanced"
+    },
+    "Citan": {
+      "sex": "m",
+      "age": "a",
+      "role": "balanced"
+    },
+    "Elly": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    },
+    "Emeralda": {
+      "sex": "f",
+      "age": "c",
+      "role": "striker"
+    },
+    "Fei": {
+      "sex": "m",
+      "age": "a",
+      "role": "balanced"
+    },
+    "Maria": {
+      "sex": "f",
+      "age": "c",
+      "role": "balanced"
+    },
+    "Ricardo": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    }
+  }
+}
