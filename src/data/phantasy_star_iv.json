@@ -1,0 +1,62 @@
+{
+  "title": "Phantasy Star IV: The End of the Millennium",
+  "year": 1995,
+  "platform": "gen",
+  "characters": {
+    "Alys": {
+      "sex": "f",
+      "age": "a",
+      "role": "skirmisher"
+    },
+    "Chaz": {
+      "sex": "m",
+      "age": "y",
+      "role": "balanced"
+    },
+    "Demi": {
+      "sex": "f",
+      "age": "c",
+      "role": "balanced"
+    },
+    "Gryz": {
+      "sex": "m",
+      "age": "y",
+      "role": "bruiser"
+    },
+    "Hahn": {
+      "sex": "m",
+      "age": "a",
+      "role": "mage"
+    },
+    "Kyra": {
+      "sex": "f",
+      "age": "a",
+      "role": "balanced"
+    },
+    "Raja": {
+      "sex": "m",
+      "age": "o",
+      "role": "mage"
+    },
+    "Rika": {
+      "sex": "f",
+      "age": "y",
+      "role": "balanced"
+    },
+    "Rune": {
+      "sex": "m",
+      "age": "a",
+      "role": "mage"
+    },
+    "Seth": {
+      "sex": "m",
+      "age": "a",
+      "role": "mage"
+    },
+    "Wren": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    }
+  }
+}
