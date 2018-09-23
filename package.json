@@ -11,15 +11,15 @@
     "live-server": "live-server ./build --port=3456 --wait=1000",
     "make-dirs": "mkdirp build/publish && copy CNAME ./build/publish",
     "make-files": "copy index.html ./build",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "pug": "pug --obj data.js src/*.pug --out ./build",
-    "pug-dev": "npm run pug -- --pretty",
+    "pug-dev": "yarn pug --pretty",
     "purify": "postcss --use usedcss --usedcss.html=./build/index.html --output ./build/app.css ./build/app.css",
-    "pug-prod": "npm run pug -- --no-debug",
+    "pug-prod": "yarn pug --no-debug",
     "start": "npm-run-all --sequential clean make-dirs make-files --parallel stylus-dev pug-dev watch-compile live-server",
     "stylus": "stylus -u autoprefixer-stylus --with \"{ browsers: ['last 2 versions'] }\" --include-css --out ./build/app.css ./src/app.styl",
-    "stylus-dev": "npm run stylus -- --watch",
-    "stylus-prod": "npm run stylus -- --compress",
+    "stylus-dev": "yarn stylus --watch",
+    "stylus-prod": "yarn stylus --compress",
     "watch-compile": "node sentry.js"
   },
   "repository": {
@@ -50,5 +50,9 @@
   },
   "dependencies": {
     "reset-css": "2.0.20160720"
+  },
+  "engines": {
+    "node": "8.12.0",
+    "yarn": "1.9.4"
   }
 }
