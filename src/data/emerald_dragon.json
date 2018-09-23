@@ -1,0 +1,62 @@
+{
+  "title": "Emerald Dragon",
+  "year": 1995,
+  "platform": "snes",
+  "characters": {
+    "Atrushan": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    },
+    "Bagin": {
+      "sex": "m",
+      "age": "o",
+      "role": "mage"
+    },
+    "Barsom": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Farna": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    },
+    "Karshwarl": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Khosraw": {
+      "sex": "m",
+      "age": "o",
+      "role": "bruiser"
+    },
+    "Hathram": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    },
+    "Saoshyant": {
+      "sex": "m",
+      "age": "a",
+      "role": "skirmisher"
+    },
+    "Tamryn": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    },
+    "Walamur": {
+      "sex": "m",
+      "age": "a",
+      "role": "skirmisher"
+    },
+    "Yaman": {
+      "sex": "m",
+      "age": "a",
+      "role": "skirmisher"
+    }
+  }
+}

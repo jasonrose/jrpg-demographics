@@ -1,0 +1,57 @@
+{
+  "title": "Lunar Silver Star Story Complete",
+  "year": 1998,
+  "platform": "psx",
+  "characters": {
+    "Alex": {
+      "sex": "m",
+      "age": "y",
+      "role": "striker"
+    },
+    "Ghaleon": {
+      "sex": "m",
+      "age": "a",
+      "role": "mage"
+    },
+    "Jessica": {
+      "sex": "f",
+      "age": "y",
+      "role": "mage"
+    },
+    "Kyle": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Mia": {
+      "sex": "f",
+      "age": "y",
+      "role": "mage"
+    },
+    "Laike": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Luna": {
+      "sex": "f",
+      "age": "y",
+      "role": "mage"
+    },
+    "Nash": {
+      "sex": "m",
+      "age": "y",
+      "role": "mage"
+    },
+    "Ramus": {
+      "sex": "m",
+      "age": "y",
+      "role": "bruiser"
+    },
+    "Tempest": {
+      "sex": "m",
+      "age": "y",
+      "role": "skirmisher"
+    }
+  }
+}

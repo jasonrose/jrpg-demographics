@@ -1,0 +1,47 @@
+{
+  "title": "Shining the Holy Ark",
+  "year": 1996,
+  "platform": "sat",
+  "characters": {
+    "Akane": {
+      "sex": "f",
+      "age": "y",
+      "role": "skirmisher"
+    },
+    "Arthur": {
+      "sex": "m",
+      "age": "a",
+      "role": "striker"
+    },
+    "Basso": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Doyle": {
+      "sex": "m",
+      "age": "a",
+      "role": "bruiser"
+    },
+    "Forte": {
+      "sex": "m",
+      "age": "a",
+      "role": "mage"
+    },
+    "Lisa": {
+      "sex": "f",
+      "age": "a",
+      "role": "striker"
+    },
+    "Melody": {
+      "sex": "f",
+      "age": "a",
+      "role": "mage"
+    },
+    "Rodi": {
+      "sex": "m",
+      "age": "a",
+      "role": "skirmisher"
+    }
+  }
+}

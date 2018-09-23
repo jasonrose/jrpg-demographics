@@ -3,18 +3,18 @@
 ## To build the site locally:
 
 ```
-npm install
-npm start
+yarn install
+yarn start
 ```
 
 ## To build the production version of the site:
 
 ```
-npm run build
+yarn build
 ```
 
 ## To deploy to `gh-pages`
 
 ```
-npm run deploy
+yarn deploy
 ```

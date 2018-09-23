@@ -631,9 +631,9 @@ copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
 
-copy@0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/copy/-/copy-0.3.0.tgz#0d5fda5e063d2dedf992b78ac060a0820caeeff3"
+copy@0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/copy/-/copy-0.3.2.tgz#870b871d02a599b3c6ef27bc5b3d4c4102261909"
   dependencies:
     async-each "^1.0.0"
     bluebird "^3.4.1"
